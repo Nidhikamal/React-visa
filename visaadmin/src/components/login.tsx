@@ -1,7 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../assets/images/visalogo.svg'
 import forgotpassword from '../assets/images/reCAPTCHA.png'
+import validation from './commen/validation'
 const Login = () => {
+  
+  const [values,setValues]= useState({
+    name:'',
+    password:''
+  })
+  const [errors,setErrors]= useState({
+    name:"",
+    password:''
+  })
+const handleChange = (e:any) =>{
+
+  setValues({...values,[e.target.name] : e.target.value})
+
+} 
+const handleSubmit =(e:any) =>{
+  e.preventDefault();
+  setErrors(validation(values))
+}
+ 
+
   return (
     <div className="global-container">
                   
@@ -13,14 +34,16 @@ const Login = () => {
                             <div className="sub-contnu">to continue to your visa application</div>
                         </div>
                     </div>
-                    <form action=" ">
+                    <form onSubmit={handleSubmit}>
                       <div  className='container'>
                         <div className="floating-label-group login-inputs">
-                            <input type="text" id="username" className="form-control" required />
+                            <input type="text" name='name' id="username" value={values.name} className="form-control"  onChange={handleChange} />
                             <label className="floating-label">Username / Email</label>
+                            {errors.name && <p style={{color:"red",fontSize:'13px'}} >{errors.name}</p> }
                         </div>
                         <div className="floating-label-group login-inputs">
-                          <input type="password" id="username" className="form-control"  required />
+                          <input type="password"  name='password' id="password" value={values.password} className="form-control" onChange={handleChange}  />
+                          {errors.password && <p style={{color:"red",fontSize:'13px'}} >{errors.password}</p> }
                           <label className="floating-label">Password</label>
                       </div>
                       </div>
