@@ -1,0 +1,44 @@
+.inquiry-popup-p-form
+{
+    display: block !important;
+}
+.select-popup-form
+{
+    width:25% !important
+}
+.table-preview-modal-outer-popup-form{
+    padding: 20px;
+}
+.input-popup
+{
+    
+   
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size:13px;
+    margin-top:30px;
+    background: url('../../images/search-icon.svg');
+    background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 30px;
+}
+.green-border-focus-popup
+{
+    margin-top:30px;
+}
+.popup-buttons-forms
+{
+    float: left !important;
+}
+@media only screen and (max-width: 1200px) {
+    .select-popup-form
+{
+    width:85% !important
+}
+
+}

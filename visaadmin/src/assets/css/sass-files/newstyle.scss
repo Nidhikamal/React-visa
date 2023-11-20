@@ -1,0 +1,355 @@
+
+/*----- Signup HTML ----*/
+  
+$font-weight-500:500;
+$font-weight-700:700;
+$color-red:#FF5050;
+
+.body-sign-in-box {
+  background-color: $color-white ;
+  width: 100%;
+}
+.global-container {
+    
+    background-color: $color-white;
+     margin-top: 4%;
+}
+
+  .return-error-txt-msg {
+    color: $color-red !important;
+    font-size: 13px;
+    text-align: left;
+    font-weight: 400;
+    padding: 0px 0px 12px 0px;
+}
+   
+  
+  .btn-primary-blue:hover {
+    background-color: $primary-blue !important;
+    color: $color-white !important;
+  }
+   
+  
+  .btn-sign-white:hover {
+    background-color: $color-white !important;
+    color: #0e2246 !important;
+    border: 1px solid $secondary-greay;
+  }
+ 
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  img.visalogo {
+    width: 115px;
+    float: none;
+  }
+  
+  .container {
+    padding: 25px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+   
+.m-b-5 {
+    margin-bottom: 5px;
+}
+.m-b-10 {
+  margin-bottom: 10px;
+}
+.m-b-20 {
+  margin-bottom: 20px;
+}
+.forgetpass-box {
+  margin: 11px 0px 17px 0px;
+}
+.forgetpass-box a {
+    color: #0517BE;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+.signin-txt-box {
+    padding-top: 60px;
+    padding-bottom: 15px;
+}
+
+.captc-labl-widt {
+    /* display: inline-block; */
+    width: 50%;
+}
+.captc-chek-sty {
+    float: left;
+    margin-right: 10px !important
+}
+.capt-cntanr{
+  width: 100%;
+    
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+.capta-img {
+  margin-left: -5px;
+  width: 102%;
+  padding-bottom: 5px;
+}
+.sub-contnu{
+  color: $primary-blue !important;
+  font-size: $font-size-16 !important;
+  font-weight: normal;
+}
+.sub-contnu-reset {
+  color: $primary-blue !important;
+  font-size: $font-size-16 !important;
+  text-align: left;
+  font-weight: $font-weight-300;
+  line-height: 25px;
+}
+
+.border-line {
+  border-bottom: 1px solid $secondary-greay;
+  margin-top: 27px;
+  margin-bottom: 25px;
+}
+.signup-newuser {
+  font-weight: $font-weight-500;
+  font-size: $font-size-16;
+}
+.signing-bax label {
+  font-weight: $font-weight-600;
+  font-size: $font-size-15;
+  margin-bottom: 6px;
+}
+
+.resetpass-sucess-box {
+  width: 100%;
+  padding: 20px 5px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid $green-color;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: auto;
+  border-radius: 6px;
+}
+.p-b-0 {
+  padding-bottom: 0px;
+}
+img.green-tick {
+  width: 36px !important;
+  float: none;
+}
+.tick-m-r {
+  margin-right: -15px;
+}
+.return-msg-txt {
+  color: $primary-blue  !important;
+  font-size: $font-size-13 !important;
+  text-align: left;
+  font-weight: $font-weight-300;
+  padding: 0px 0px 12px 0px;
+}
+.form-control:focus {
+  border-color: $secondary-greay !important;
+  outline: 0;
+  //-webkit-box-shadow: inset 0 0px 0px rgb(0 0 0 / 0%), 0 0 0px rgb(102 175 233 / 60%) !important;
+  //box-shadow: inset 0 0px 0px rgb(0 0 0 / 0%), 0 0 0px rgb(102 175 233 / 60%) !important;
+}
+.registrd-email {
+  font-size: 16px;
+  font-weight: 600;
+}
+ 
+.sucess-msg-txt {
+  padding-right: 5px;
+  padding-left: 10px;
+}
+.sucess-msg-hed {
+  color: #0D192E !important;
+  font-size: 16px !important;
+  text-align: left;
+  font-weight: 700;
+  line-height: 25px;
+} 
+.error-msg-ftr-txt {
+  margin-top: -10px;
+}
+
+
+.form-signin {
+  width: 100%;
+  max-width: 420px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-label-group {
+  position: relative;
+   
+}
+
+.form-label-group > input, .form-label-group > label {
+  padding: var(--input-padding-y) var(--input-padding-x);
+  padding: 28px 16px;
+  color: #0D192E;
+  font-size: 16px;
+}
+
+.form-label-group > label {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0; /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: #808B9F;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+  font-weight: 400;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::placeholder {
+  color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  padding-top: 10px;
+}
+
+.form-label-group input:not(:placeholder-shown) ~ label {
+  padding-top: calc(var(--input-padding-y) / 3);
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  font-size: 12px;
+  color: #808B9F;
+  margin-top: 20px;
+}
+.signing-bax1 {
+  width: auto ;
+}
+.registrd-email {
+  font-size: 15px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.sign-head {
+  color: #0D192E;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.forgetpass-box a {
+  color: #0517BE;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+.sign-form-input {
+  width: 100%;
+  padding: 12px 16px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #808B9F;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 70px;
+  border-radius: 6px;
+}
+.sign-form-error {
+  border: 1px solid #FF5050 !important;
+   
+}
+.btn-primary-blue {
+  background-color: #0D192E;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 8px;
+  height: 65px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.btn-sign-white {
+  background-color: #fff;
+  color: #0D192E;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 8px;
+  height: 65px;
+  border: 1px solid #808B9F;
+  font-size: 16px;
+}
+ 
+
+  /* Change styles for span and cancel button on extra small screens */
+  @media (min-width: 1900px){
+    .signing-bax1 {
+      width: 500px;
+    }
+}
+  @media (min-width: 1200px){
+    .signing-bax1 {
+      width: 500px;
+    }
+}
+
+@media (min-width: 768px){
+  .signing-bax1 {
+    width: 500px;
+  }
+}
+@media (min-width: 522px){
+  .signing-bax1 {
+    width: 500px;
+  }
+ 
+}
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+    .capta-img {
+      margin-left: -3px;
+      width: 102%;
+      padding-bottom: 5px;
+  }
+  .form-label-group > input, .form-label-group > label {
+    padding: var(--input-padding-y) var(--input-padding-x);
+    padding: 28px 16px;
+    color: #0D192E;
+    font-size: 13px;
+}
+  }

@@ -1,0 +1,174 @@
+.add-wized-innernew {
+  width: 100%;
+  float: left;
+  border-radius: 8px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  box-shadow: 0px 5px 4px;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.add-wized-innernew:hover {
+  width: 100%;
+  float: left;
+  border-radius: 8px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #ECEDEF;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+.user-dash-txt {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.user-dash-page-grid-6 {
+  float: left;
+  width: 100%;
+  display: block;
+  margin-top: 0px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr) !important;
+  gap: 35px 35px;
+  grid-auto-rows: minmax(0px, auto);
+  padding-bottom: 30px;
+}
+
+.user-dash-main-box {
+  width: 80%;
+  padding-left: 5%;
+}
+
+.user-dash-head-box1 {
+  padding: 90px 70px 100px 0px;
+}
+
+.user-dash-sub-txt1 {
+  font-size: 15px;
+  padding-bottom: 15px;
+  font-weight: 400;
+}
+
+.t-align-c {
+  text-align: center;
+}
+
+.user-dash-sub-txt1 {
+  font-size: 15px;
+  padding-bottom: 15px;
+  font-weight: 400;
+}
+
+.wizard-content-top .left {
+  width: auto;
+  float: left;
+  display: block;
+}
+
+.user-dash-head-box1 {
+  padding: 90px 70px 100px 0px;
+}
+
+.user-dash-txt-head {
+  float: left;
+  font-size: 28px;
+  font-weight: 800;
+  color: #000000;
+}
+
+@media only screen and (max-width: 1600px) {
+  .user-dash-page-grid-6 {
+    float: left;
+    width: 100%;
+    display: block;
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) !important;
+    gap: 35px 35px;
+    grid-auto-rows: minmax(0px, auto);
+    padding-bottom: 30px;
+  }
+  .user-dash-main-box {
+    width: 90%;
+    padding-left: 5%;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .user-dash-page-grid-6 {
+    float: left;
+    width: 100%;
+    display: block;
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 35px 35px;
+    grid-auto-rows: minmax(0px, auto);
+    padding-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .user-dash-page-grid-6 {
+    float: left;
+    width: 100%;
+    display: block;
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 35px 35px;
+    grid-auto-rows: minmax(0px, auto);
+    padding-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .user-dash-page-grid-6 {
+    float: left;
+    width: 100%;
+    display: block;
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 35px 35px;
+    grid-auto-rows: minmax(0px, auto);
+    padding-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .user-dash-page-grid-6 {
+    float: left;
+    width: 100%;
+    display: block;
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 30px 30px;
+    grid-auto-rows: minmax(0px, auto);
+    padding-bottom: 30px;
+  }
+  .user-dash-main-box {
+    width: 100%;
+    padding-left: 0%;
+  }
+}
+@media only screen and (max-width: 459px) {
+  .user-dash-page-grid-6 {
+    float: left;
+    width: 100%;
+    display: block;
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 30px 30px;
+    grid-auto-rows: minmax(0px, auto);
+    padding-bottom: 30px;
+  }
+  .user-dash-main-box {
+    width: 100%;
+    padding-left: 0%;
+  }
+}/*# sourceMappingURL=my-user-dashboard.css.map */

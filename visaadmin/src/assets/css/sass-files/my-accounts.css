@@ -1,0 +1,505 @@
+.myaccount-two-grid {
+  float: left;
+  width: 100%;
+  display: block;
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 25px 25px;
+  grid-auto-rows: minmax(0px, auto);
+  padding-bottom: 30px;
+}
+
+.my-accnt-subhead {
+  padding-left: 15px;
+  font-size: 15px;
+  font-weight: 500;
+  vertical-align: text-bottom;
+}
+
+.my-accnt-box-outerhead {
+  border: 1px solid #ccc;
+  padding: 18px 20px 15px;
+}
+
+.my-accnt-box-outerdiv {
+  border: 1px solid #ccc;
+  padding: 15px 20px;
+  border-top: 0px;
+  min-height: 330px;
+}
+
+.my-accnt-box-outerhead1 {
+  border: 1px solid #ccc;
+  padding: 18px 20px 15px;
+  width: 85%;
+}
+
+.my-accnt-box-outerdiv1 {
+  border: 1px solid #ccc;
+  padding: 15px 20px;
+  border-top: 0px;
+  width: 85%;
+  min-height: 330px;
+}
+
+.my-accnt-box-outerdiv .form-group label {
+  color: #53565A;
+  font-size: 14px;
+  line-height: 18px;
+  padding-bottom: 10px;
+}
+
+.my-accnt-p-tb {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.my-accnt-p-tb1 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.my-accnt-user-input {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.my-accnt-user-inputblue {
+  font-size: 15px;
+  font-weight: 300;
+  color: #0057FF;
+}
+
+.my-accnt-seperator {
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.my-accnt-form-control {
+  height: 45px;
+  border: 0.5px solid #7B8EB0;
+  box-sizing: border-box;
+  border-radius: 0px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #000000;
+  padding-top: 5px;
+  background: #F1F1F1;
+  margin-top: 8px;
+}
+
+.my-accnt-p-t-10 {
+  padding-top: 10px;
+}
+
+.my-accnt-txt-undrline {
+  text-decoration: underline;
+}
+
+.my-accnt-w-100 {
+  width: 100%;
+}
+
+.setting-width {
+  width: 19px;
+}
+
+.my-accnt-box-myapplicant {
+  border-bottom: 1px solid #ccc;
+  padding-top: 5px;
+  height: 65px;
+  display: flex;
+  width: 100%;
+}
+
+.my-accnt-tablewdt {
+  display: grid;
+  width: 100%;
+}
+
+.my-accnt-width-5 {
+  width: 50%;
+  font-size: 14px;
+  float: left;
+}
+
+.my-accnt-width-4 {
+  width: 40%;
+  font-size: 14px;
+  float: left;
+}
+
+.my-accnt-width-3 {
+  width: 30%;
+  font-size: 14px;
+  float: left;
+}
+
+.my-accnt-width-2 {
+  width: 20%;
+  font-size: 14px;
+  float: left;
+}
+
+.my-accnt-width-1 {
+  width: 10%;
+  font-size: 14px;
+  float: left;
+}
+
+.my-accnt-box-outerhead1 .icon-super-admin-delete:before {
+  content: "\e921";
+  font-size: 19px;
+}
+
+.my-accnt-f-w {
+  font-weight: 400;
+}
+
+.delete-accunt {
+  color: #0057FF;
+  font-size: 15px;
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+.travel-agent-box {
+  margin-bottom: 25px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+.travel-agent-head {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 400;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.travel-agent-txt {
+  color: #fff;
+  text-align: left;
+  font-weight: 300;
+  padding-bottom: 15px;
+}
+
+.click-here-a {
+  color: #0057FF;
+}
+
+.click-here-a1 {
+  color: #fff;
+}
+
+.delete-acc-box {
+  min-height: 170px;
+}
+
+.v-align-t {
+  vertical-align: top;
+}
+
+.myapp-red-text {
+  color: #FF5050 !important;
+  float: left !important;
+  font-weight: 300 !important;
+}
+
+.myapp-black-text {
+  color: #000 !important;
+  float: left !important;
+  font-weight: 300 !important;
+}
+
+.my-app-p-red {
+  color: #FF5050 !important;
+  float: left;
+  padding-top: 10px;
+}
+
+.my-app-p-l {
+  padding-left: 15px;
+  float: left;
+  padding-top: 10px;
+}
+
+.applicant-listing-block .left-block-detail {
+  width: 100%;
+  float: left;
+  display: flex;
+}
+
+.delivery-add-myapp {
+  padding: 15px 30px;
+  border: 0.7px solid #ccc;
+  margin-top: 15px;
+  border-radius: 9px;
+  font-size: 15px;
+  line-height: 21px;
+  color: #979797;
+}
+
+.div-font-18 {
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.vas-check {
+  float: left;
+  padding-right: 15px;
+  width: 45%;
+}
+
+.vas-check-input {
+  float: right;
+  width: 55%;
+}
+
+.vas-check-outer {
+  width: 100%;
+  float: left;
+  padding-bottom: 15px;
+}
+
+.vas-check-outer1 {
+  width: 100%;
+  float: left;
+}
+
+.vas-outer-box {
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.form-control {
+  font-family: "Inter", sans-serif !important;
+}
+
+.form-control {
+  line-height: 3.428571;
+}
+
+.form-vas {
+  height: 25px;
+  border: 0.5px solid #7B8EB0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #000000;
+  padding-top: 6px;
+  background: none;
+  margin-top: -3px;
+}
+
+.txt-area-minhigh {
+  min-height: 130px !important;
+  margin-bottom: 0px !important;
+}
+
+.margin-top-15 {
+  margin-top: 15px;
+}
+
+.section-info-scroll {
+  height: 500px;
+  overflow: scroll;
+  margin-bottom: 60px;
+  padding-right: 15px;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+@media only screen and (max-width: 1950px) {
+  .delete-acc-box {
+    min-height: 151px;
+  }
+}
+@media only screen and (max-width: 1900px) {
+  .my-accnt-box-outerdiv1 {
+    border: 1px solid #ccc;
+    padding: 15px 20px;
+    border-top: 0px;
+    width: 85%;
+    min-height: 330px;
+  }
+  .my-accnt-box-outerdiv {
+    border: 1px solid #ccc;
+    padding: 5px 20px;
+    border-top: 0px;
+    min-height: 330px;
+  }
+  .delete-acc-box {
+    min-height: 150px;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .my-accnt-box-outerdiv {
+    border: 1px solid #ccc;
+    padding: 5px 20px;
+    border-top: 0px;
+    min-height: 330px;
+  }
+  .my-accnt-box-outerhead1 {
+    border: 1px solid #ccc;
+    padding: 18px 20px 15px;
+    width: 100%;
+  }
+  .my-accnt-box-outerdiv1 {
+    border: 1px solid #ccc;
+    padding: 15px 20px;
+    border-top: 0px;
+    width: 100%;
+    min-height: 330px;
+  }
+  .my-accnt-seperator {
+    font-size: 16px;
+    font-weight: 300;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  .delete-acc-box {
+    min-height: 150px;
+    padding: 10px 20px;
+  }
+  .my-accnt-my-appli-tabl {
+    min-height: 330px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .my-accnt-box-outerdiv1 {
+    border: 1px solid #ccc;
+    padding: 15px 20px;
+    border-top: 0px;
+    width: 100%;
+    min-height: 352px;
+  }
+  .delete-acc-box {
+    min-height: 150px !important;
+    padding: 10px 20px;
+  }
+  .my-accnt-my-appli-tabl {
+    min-height: 350px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .my-accnt-width-5 {
+    width: 50%;
+    font-size: 12px;
+  }
+  .my-accnt-width-4 {
+    width: 40%;
+    font-size: 12px;
+  }
+  .my-accnt-width-3 {
+    width: 30%;
+    font-size: 12px;
+  }
+  .my-accnt-width-2 {
+    width: 20%;
+    font-size: 12px;
+  }
+  .my-accnt-width-1 {
+    width: 10%;
+    font-size: 12px;
+  }
+  .my-accnt-box-outerdiv1 {
+    border: 1px solid #ccc;
+    padding: 15px 20px;
+    border-top: 0px;
+    width: 100%;
+    min-height: 352px;
+  }
+  .delete-acc-box {
+    min-height: 150px !important;
+    padding: 10px 20px;
+  }
+  .travel-agent-head {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .my-accnt-my-appli-tabl {
+    min-height: 350px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .myaccount-two-grid {
+    float: left;
+    width: 100%;
+    display: block;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 25px 25px;
+    grid-auto-rows: minmax(0px, auto);
+    padding-bottom: 30px;
+  }
+  .my-accnt-seperator {
+    font-size: 16px;
+    font-weight: 300;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  .my-app-p-l {
+    padding-left: 15px;
+    float: left;
+    padding-top: 10px;
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 786px) {
+  .my-accnt-subhead {
+    padding-left: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    vertical-align: text-bottom;
+  }
+  .my-accnt-user-input {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .my-app-p-l {
+    padding-left: 15px;
+    float: left;
+    padding-top: 10px;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .my-accnt-subhead {
+    padding-left: 15px;
+    font-size: 10px;
+    font-weight: 500;
+    vertical-align: text-bottom;
+  }
+}/*# sourceMappingURL=my-accounts.css.map */

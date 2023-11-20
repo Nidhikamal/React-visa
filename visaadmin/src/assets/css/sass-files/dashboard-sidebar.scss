@@ -1,0 +1,1996 @@
+@mixin display_flex($direction, $items, $content) {
+  display: flex;
+  @if $direction != null {
+    flex-direction: $direction;
+  }
+  @if $items != null {
+    align-items: $items;
+  }
+  @if $content != null {
+    justify-content: $content;
+  }
+}
+
+.sidebar {
+
+  width: 250px;    float: left;
+  min-height: 100vh;
+  height: auto;position: fixed;
+  height: auto;
+
+  .sidebarinner{  width: 250px;
+    background: $sidebard-blue;  min-height: 100vh; float: left;
+    height: auto;
+
+
+  &.close {
+    width: 78px;
+
+    .logo-details {
+     
+        transition-delay: 0s;
+    opacity: 1;
+        pointer-events: none;
+        float: left;
+        padding-left: 30px;
+    
+    }
+
+    .nav-links {
+      overflow: visible;
+
+      li {
+        &:hover {
+          .sub-menu {
+            top: 0;
+            opacity: 1;
+            pointer-events: auto;
+            transition: all 0.4s ease;
+          }
+
+          .sub-menu {
+            font-size: 18px;
+            opacity: 1;
+            display: block;
+          }
+        }
+
+        .icon-link {
+          display: block;
+        }
+
+        a {
+          .link-name {
+            opacity: 1;
+            pointer-events: none;
+          }
+        }
+
+        .sub-menu {
+          position: absolute;
+          left: 100%;
+          top: -10px;
+          margin-top: 0;
+          padding: 10px 20px;
+          border-radius: 0 6px 6px 0;
+          opacity: 0;
+          display: block;
+          pointer-events: none;
+          transition: 0;
+        }
+      }
+
+      i {
+        &.arrow {
+          display: none;
+        }
+      }
+    }
+
+    .profile-details {
+      background: none;
+      width: 78px;
+
+
+      i,
+      .profile-name,
+      .job {
+        display: none;
+      }
+    }
+
+    ~ .home-section {
+      left: 78px;
+      width: calc(100% - 80px);
+    }
+  }
+
+  .logo-details {
+ width: 114px;    transition: 0.3s ease;
+ transition-delay: 0.1s;
+float: left;
+margin-left: 30px;
+float: left;
+margin-top: 30px;
+  }
+
+  .nav-links {
+ width: 100%;
+    padding: 30px 0px 150px 0px;
+    overflow: auto;
+    float: left;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    li {
+      position: relative;
+      list-style: none;
+      transition: all 0.4s ease;
+      margin-bottom: 2px;
+      &:hover {
+        background: $color-white;
+
+        .sub-menu {
+          &.blank {
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+      &.active {
+        background: $color-white;
+      }
+      &.showMenu {
+        i {
+          &.arrow {
+            transform: rotate(-180deg);
+          }
+        }
+
+        .sub-menu {
+          display: block;
+        }
+      }
+
+      .icon-link {
+        @include display_flex(null, center, space-between);
+      }
+
+      i {
+        height: 50px;
+        min-width: 78px;
+        text-align: center;
+        line-height: 50px;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      a {
+        @include display_flex(null, center, null);
+        text-decoration: none;
+        padding: 23px 30px;
+        .link-name {
+          font-size:$common-small-font;
+          font-weight:$font-weight-400;
+          color: $backcolor;
+          transition: all 0.4s ease;
+          float: left;
+    padding-left: 20px;
+        }
+      }
+
+      .sub-menu {
+        padding: 6px 6px 14px 80px;
+        display: none;
+
+        &.blank {
+          opacity: 1;
+          pointer-events: none;
+          padding: 3px 20px 6px 16px;
+        }
+
+        a {
+          color: #fff;
+          font-size: 15px;
+          padding: 5px 0;
+          white-space: nwrap;
+          opacity: 0.6;
+          transition: all 0.3 ease;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+
+        .link-name {
+          display: none;
+        }
+      }
+    }
+  }
+.profile-details {
+  position: fixed;
+  bottom: 0;
+  width: 260px;
+  @include display_flex(null, center, space-between);
+  background: #1b1b31;
+  padding: 12px 0;
+  transition: all 0.5s ease;
+
+  .profile-content {
+    @include display_flex(null, center, null);
+
+    img {
+      height: 52px;
+      width: 52px;
+      object-fit: cover;
+      border-radius: 16px;
+      margin: 0 14px 0 12px;
+      background: #1d1b31;
+      transition: all 0.5s ease;
+    }
+  }
+
+  .name-job {
+    padding-left: 20px;
+    .profile-name,
+    .job {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+    .job {
+      font-size: 12px;
+    }
+  }
+}
+
+  
+}
+}
+.home-section {
+  position: absolute;
+  background: $color-white;
+  min-height: 100vh;
+  left: 250px;
+  top: 0px;
+  width: calc(100% - 250px);
+  transition: all 0.5s ease;
+  padding-left: 50px;
+padding-top: 80px;
+padding-bottom: 130px;
+  .home-content {
+    height: 60px;
+    align-items: center;
+
+
+    .text {
+      color: #11101d;
+      font-size: 26px;
+      font-weight: 600;
+    }
+  }
+}
+
+.bx-menu {
+  color: #11101d;
+  font-size: 35px;
+  margin: 0 35px;
+  cursor: pointer;    display: none;
+}
+.hamber-menu{
+  float: left;
+  position: absolute;
+  z-index: 1001;
+}
+.dashboard-inner-top{
+  width: 100%;
+  float: left;
+display: block;
+.welcome-icon{
+width: 51px;
+float: left;
+}
+.dashboard-welcome-top-text{
+  width: 430px;
+  float: left;
+  margin-left: 30px;
+.welcome-head{
+  float: left;
+  display: block;
+  font-size: $font-size-24;
+  font-weight: $font-weight-600;
+  color: $gray-text-color;
+  padding-bottom: 5px;
+}
+p{
+  width: 100%;
+  float: left;
+  display: block;  color: $gray-text-color;
+  font-size: $font-size-20;
+  line-height: 28px;
+}
+}
+}
+.dashboard-innercontent-block{
+  padding-left: 85px;
+  width: 100%;
+  float: left;
+  padding-top: 50px;
+  padding-right: 40px;
+}
+.dashboard-block-section{
+    float: left;
+ width: 100%;
+ display: block;
+ margin-top: 0px;
+ display: grid;
+ grid-template-columns: repeat(4,1fr) ;
+ gap: 30px 30px;
+ grid-auto-rows: minmax(0px,auto);
+ margin-bottom: 30px;
+}
+.dashboard-taskbox{
+  width: 100%;
+  float: left;
+  display: flex;
+ position: relative;    min-height: 456px;
+}
+.dashboard-create-newbox{
+  width: 100%;
+  float: left;
+ display: block;
+ position: relative;
+}
+.dashboard-create-inner-block {
+  float: left;
+  width: 100%;
+  display: block;
+  padding: 30px 0;
+  background: $light-gray;
+  border-top-right-radius:  $border-radious-8;
+  border-top-left-radius: $border-radious-8;
+  border: 1px dotted $light-blue-color;
+  border-bottom: 0;    min-height: 392px;
+}
+.create-task-inner-block{
+  float: left;
+  width: 100%;
+  display: block;
+  background: $light-gray;
+  border-radius: $border-radious-8;
+  border:1px dotted $light-blue-color;
+  img{
+    padding:70px 30px; 
+    float: left;    max-height: 370px;
+  }
+}
+.how-thiswork-block{
+  width: 100%;
+  float: left;
+  display: block;
+  .left{
+    width: auto;
+    float: left;
+    padding-right: 10px;
+    span{
+      float: left;
+      color: $color-orange;
+      font-size: $font-size-16;
+    }
+  }
+  .right{
+float: left;
+display: block;
+width: auto;
+p{
+  font-size: $common-small-font;
+  float: left;
+  a{
+    color: $electric-blue;
+    font-weight: $font-weight-400;
+    text-decoration: underline;
+  }
+}
+  }
+}
+.create-whitebox{
+  float: left;
+  width: 100%;
+  display: block;
+  background:$color-white;
+  border-radius: $border-radious-8;
+  border:0.5px solid $light-white-gray;
+}
+
+
+.create-taskbutton{
+  width: 100%;float: left;
+  background: $primary-blue;
+  text-align: center;
+  padding: 20px 5px;
+  color: $color-white;
+  text-transform: uppercase;
+  font-size: $font-size-16;
+  font-weight: $font-weight-600;
+  border-bottom-right-radius: $border-radious-8;
+  border-bottom-left-radius: $border-radious-8;
+  position: absolute;
+  bottom: 1px;
+}
+
+
+.addmore-aplicant-button{
+  width: 99.3%;float: left;
+  background: $light-gray;
+  text-align: center;
+  padding: 20px 5px;
+  color: $backcolor;
+  text-transform: uppercase;
+  font-size: $font-size-16;
+  font-weight: $font-weight-600;  border-top:0.5px solid $gray-light;  border-bottom-right-radius: $border-radious-8;
+  border-bottom-left-radius: $border-radious-8;
+  position: absolute;
+  bottom: 1px;
+}
+.icon-dashboard, .icon-dashboard-document, .icon-dashboard-visa, .icon-dashboard-upport, .icon-dashboard-help, .icon-dashboard-sign-out, .icon-dashboard-notification, .icon-dashboard-my-application{
+  font-size: 16px;
+}
+
+.sidebar.close .hamber-menu .bx-menu:before {
+  content: "\00d7";
+}
+.my-dashboard-content{
+  padding-left: 0;
+  padding-top: 40px;
+}
+.my-dashboard-top{
+  width: 100%;
+  float: left;
+  display: block;
+  padding-left: 40px;
+}
+.top-main-head{
+  float: left;
+    display: block;
+    font-size: $font-size-24;
+    font-weight: $font-weight-600;
+    color: $backcolor;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.top-text-my-dashboard{
+  font-size: $font-size-16;
+  font-weight: $font-weight-300;
+  width: 100%;
+  float: left;    color: $gray-text-color;
+}
+.my-dashboard-middle{
+  width: 100%;
+  float: left;
+  display: block;
+  padding-left: 40px;
+  padding-top:30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  border-bottom: 1px solid $light-white-gray;
+}
+.my-dashboard-top-grid{
+  float: left;
+width: 100%;
+display: block;
+margin-top: 0px;
+display: grid;
+grid-template-columns: repeat(5,1fr) ;
+gap: 0px 30px;
+grid-auto-rows: minmax(0px,auto);
+}
+.mydashboard-inner{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+width: 100%;
+float: left;
+display: block;
+background: $color-white;
+border: 1px solid #D9D9D9;
+padding: 30px 25px 25px;
+
+.grid-dashboard-innertop{
+  width: 100%;
+  float: left;
+  display: flex;
+  .gird-left-icon{
+    width: 35px;
+    float: left;
+    span{
+      font-size: 33px;
+      color: $backcolor;
+      float: left;
+      width: auto;
+      padding-top: 2px;
+    }
+   
+  }
+  .count-block{
+    width: auto;
+    float: left;
+    padding-left: 15px;
+    padding-right: 14px;
+    font-size: 40px;  color: $backcolor;
+    font-weight: $font-weight-600;
+    line-height: 40px;
+  }
+  .count-status{
+    float: left;
+    width: auto;
+    display: block;
+    font-size: $font-size-16;    padding-top: 17px;
+  }
+}
+.dashbrd-inner-text{
+  width: 100%;
+  float: left;
+  display: block;
+  font-size: $common-small-font;
+  color: $gray-text-color;
+  padding-top: 15px;
+}
+}
+.dashboard-bottom-block{
+  width: 100%;
+  float: left;
+  display: block;
+  padding-top: 35px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.sub-head{
+  width: 100%;
+  float: left;
+  display: block;
+  font-size: $font-size-20;
+  color: $backcolor;
+  font-weight: $font-weight-600;
+}
+.dashboard-sub-head{
+padding-bottom: 35px;
+}
+.myappoinment-block-top{
+width: 100%;
+float: left;
+padding: 30px 30px 25px;
+border-bottom: 0.5px solid $secondary-greay;
+}
+.request-block{
+  width: 100%;
+  float: left;
+  display: block;
+  padding-top: 10px;
+  color: $color-orange;
+  font-size: $font-size-15;
+  font-weight: $font-weight-300;
+}
+.myappoinment-block-bottom{
+  width: 100%;
+  float: left;
+  padding:25px 30px 30px;
+  }
+  .aponment-schdule{
+    width: 100%;
+    float: left;
+    display: block;
+    font-size: $font-size-13;
+  }
+  .aponment-schdule-block{
+    width: 100%;
+    float: left;
+    display: block;
+    padding-top: 22px;
+    img{
+      width: 19px;
+float: left;
+margin-right: 15px;
+    }
+    span.icon-adult-icon, span.icon-child-applicant{
+      float: left;
+      padding-right: 10px;
+      font-size: 15px;
+      padding-top: 1px;
+      width: 28px;
+    }
+    .right-block{
+width: auto;
+float: left;
+font-weight: $font-weight-600;
+display: block;
+font-size: $font-size-16;
+color: $gray-text-color;
+
+span{
+  font-weight: $font-weight-600;
+font-size: $font-size-16;
+}
+    }
+  }
+.appoinment-class-business{
+ width: 100%;
+ float: left;
+ display: block;
+ padding: 35px 0 15px;
+ p{
+   width: 100%;
+   float: left;
+   padding-bottom: 10px;
+   display: block;    font-size: $font-size-13;color: $gray-text-color;
+ }
+}
+
+.dashboaard-side-nav-footer{
+width: 100%;
+float: left;
+position: fixed;
+bottom: 0;
+padding: 35px 10px 40px 23px;
+display: flex;border-top: 1px solid #fff;
+img{
+  width: 25px;
+  float: left;
+}
+.right{
+  width: 90%;
+  float: left;
+  display: block;
+  padding-left: 15px;
+  padding-top: 8px;
+  p{
+    width: 100%;
+    float: left;
+    display: block;
+    font-size: $common-small-font;
+    font-weight: 400;
+    padding-bottom: 3px;
+  }
+  span{
+    float: left;
+    width: 100%;
+    font-size: $font-size-12;
+  }
+}
+}
+.align-center-display{
+  display: table;   height: 395px;width: 100%;
+  }
+  .align-center-display .inner-img {
+    display: table-cell;vertical-align: middle;  
+   
+    align-items: center;
+  
+  }
+
+
+
+
+.humburger {
+  width: 28px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  right: 40px;
+  top: 30px;
+  cursor: pointer;
+  transition: 0.5s all ease-in;
+  z-index: 5555;
+}
+
+.humburger .line {
+  height: 1.5px;
+  width: 100%;
+  background: $primary-blue;
+  display: flex;
+  transition: 0.5s all ease-in;
+  position: relative;
+  z-index: 2;
+}
+
+
+.humburger:hover .line:after {
+  width: 100%;
+}
+.humburger.open .line {
+  background: $primary-blue;
+}
+.humburger.open .line:nth-of-type(1) {
+  transform: rotate(45deg);
+  margin-top: 12px;
+}
+.humburger.open .line:nth-of-type(2) {
+  transform: rotate(-45deg);
+  margin-top: -13px;
+}
+.humburger.open .line:nth-of-type(3) {
+  visibility: hidden;
+  opacity: 0;
+}
+.menu_body.open {
+  transform: translateX(0);
+  background: #0000003d;
+  width: 100%;
+  left: 0;
+}
+.humburger .line {
+  display: none;
+}
+/*======Dashboard MY APP STYLE START==============*/
+.top-text-my-dashboard {
+  span{
+    font-size: 16px;
+    font-weight: 300;
+    color: $electric-blue;
+  }
+}
+.my-appoinment-block{
+  width: 80%;
+  float: left;
+  display: block;
+}
+.my-appoinment-grid{
+  float: left;
+width: 100%;
+display: block;
+margin-top: 0px;
+display: grid;
+grid-template-columns: repeat(3,1fr) ;
+gap: 30px 30px;
+grid-auto-rows: minmax(0px,auto);
+margin-bottom: 30px;
+}
+.my-appoinment-gird-inner{
+  float: left;
+  width: 100%;
+  display: block;
+  background: $color-white;
+  border-radius: 8px;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+  padding-bottom: 60px;
+  padding-left: 0;
+padding-right: 0;
+  .my-appoinment-top-block{
+width: 100%;
+float: left;
+padding: 30px 30px 30px;
+border-bottom: 1px solid $secondary-greay;
+  }
+  .appoinment-status-details{
+    width: 100%;
+    float: left;
+    display: block;
+    font-size: $font-size-13;
+    padding-top: 13px;
+  }
+}
+.appoinment-travel-shedule{
+  width: 100%;
+  float: left;
+  display: flex;
+  padding-top: 30px;
+  .left{
+    width: 18px;
+    float: left;
+    display: block;
+}
+.right{
+  width:auto;
+  float: left;
+  display: block;
+  font-size: 15px;
+  padding-left: 10px;
+  color: $gray-text-color;
+  span{
+    font-size: $font-size-13;
+    width:100%;
+    float: left;
+    display: block;
+    padding-top: 10px;  color: $gray-text-color;
+  }
+}
+}
+.font-weight-600{
+  font-weight: $font-weight-600;
+}
+.my-appoinment-bottom-block{
+  width: 100%;
+  float: left;
+  display: block;
+  padding: 30px 30px 30px;
+  p{
+    float: left;
+    width: 100%;
+    display: block;
+    padding-bottom:25px;    font-size:  $common-small-font;
+  }
+  .confirm-letter-block{
+    width: 100%;
+    float: left;
+    display: block;
+    padding-bottom: 30px;
+    .left{
+      width: 18px;
+      float: left;
+      display: block;
+  }
+  .right{
+    width:auto;
+    float: left;
+    display: block;
+    font-size:  $common-small-font;
+    padding-left: 10px;
+  }
+  }
+}
+.blue-text{
+  color: $electric-blue;
+}
+.myappoinment-button-outer{
+  width: 98%;
+  margin: 0px auto;
+}
+.my-app-button{
+  width: 98%;
+  float: left;
+  display: block;
+  padding: 15px 0;
+  text-align: center;
+  border: 1px solid $secondary-greay;
+  border-radius: $border-radious-8;
+  text-transform: uppercase;
+  font-size: $common-small-font;
+  font-weight: $font-weight-600;
+  margin-bottom: 1%;
+  position: fixed;
+    bottom: 0;
+    &:hover{
+      background: $primary-blue;
+      color: $color-white;
+      border: 1px solid $primary-blue;
+    }
+}
+.my-app-bule-button{
+  background: $electric-blue;
+  color: $color-white;
+  border: 1px solid $electric-blue;
+}
+.next-avaliable-slot-block{
+  width: 100%;
+  float: left;
+  padding-bottom: 15px;
+  border-bottom: 1px dotted $secondary-greay;
+  .top-head{
+    width: 100%;
+    float: left;
+    font-size: $font-size-13;
+    color: $electric-blue;
+  }
+}
+.my-appoinment-bottom-block
+{
+ .next-avaliable-slot-block:last-child{
+border-bottom: 0;
+  }
+}
+.next-avalible-padding{
+  padding: 20px 30px;
+}
+.my-appoinment-gird-inner {
+.padding-bottom-20{
+  padding-bottom: 20px;
+}
+}
+.my-appoinmentcancel-bt{
+  float: right;
+  width: auto;
+  a{
+    float: left; 
+    width: auto;   font-size: $font-size-13;
+    color: $electric-blue;
+    &:hover{
+      color: $green-color;
+    }
+  }
+}
+.padding-right-30{padding-right: 30px;
+}
+.my-appoinment-middile{
+  border-bottom: 0;
+}
+.application-page-top{
+  width: 100%;
+  float: left;
+  padding-bottom:75px;
+}
+.application-page-top ul {
+  width: 870px !important;
+  float: left;
+  li{
+    float: left ;
+    width: auto;
+    float: left;
+    margin-right: 7px;
+    a{
+      width: 100%;
+      float: left;
+      display: flex;
+    padding: 8px;
+    border:0.5px solid $light-white-gray;
+.icon-left{
+  float: left;
+  display: block;
+  width: 20px;
+  font-size: $font-size-15;
+  color: $backcolor;
+}
+span{
+  float: left;
+  display: block;
+  font-size: $common-small-font;
+  padding-left: 8px;
+  padding-right: 8px;color: $backcolor;
+}
+.rt-close{
+  float: left;
+  display: block;
+  padding-top: 6px;
+  font-size:8px;
+  color: $gray-light;
+}
+&:hover, &.active{
+  background: $primary-blue;
+  color: $color-white;
+  .icon-left{
+    color: $color-white;
+  }
+  span{
+    color: $color-white;
+  }
+  .rt-close{
+    color: $color-white;
+  }
+}
+    }
+  }
+}
+
+.my-appointment-top-pad {
+  padding-left: 0;
+  padding-top: 30px;
+}
+
+.my-application-block-grid{
+  float: left;
+  width: 85%;
+  .left-add-applicant{
+    width: 50%;
+    float: left;
+    display: block;
+    .top-main-head{
+      padding-bottom: 15px;  
+    }
+  .applicant-visa-details{
+    float: left;
+    width: 100%;
+    border-top: 1px solid $light-white-gray;
+    border-bottom: 1px solid $light-white-gray;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .inner-aplicant-block{
+      width: 100%;
+    float: left;
+    padding: 25px;   background: $light-white-gray;
+    border-radius: $border-radious-8;
+    .contnent-block{
+      float: left;
+      width:100%;
+      display: block;       padding-bottom: 20px;
+   
+      p{
+        font-size: $common-small-font;
+        font-weight: $font-weight-400;
+        color: $gray-text-color;
+        width: 45%;
+        float: left;
+      }
+      span{ width: 50%;
+        float: right;
+        text-align: right;
+          font-size: $common-small-font;
+          font-weight: $font-weight-300;
+          color: $gray-text-color;
+        }
+        &:last-child{
+          padding-bottom: 0;
+        }
+      }
+    }
+   
+    }
+
+  }
+  .right-add-applicant{
+    width: 40%;
+    float: right;
+    display: block;
+  }
+}
+.total-aplicant-block{
+  width: 100%;
+  float: left;
+  display: block;
+  padding-top: 15px;
+  .toal-top-aplicat{
+    width: 100%;
+    float: left;
+    .head-total-aplicant{
+      float: left;
+      width: auto;
+      font-size: $font-size-16;
+      font-weight: $font-weight-600;
+      display: block;
+padding-top: 8px;;
+    }
+    .add-aplicant-button{
+      float: right;
+      display: block;
+      width: auto;
+      a{
+        float: left;
+        display: block;
+        border: 0.5px solid $secondary-greay;
+        text-align: center;
+        padding: 12px 15px;
+        border-radius: $border-radious-8;
+        color: $electric-blue;
+        text-transform: uppercase;
+        font-weight: $font-weight-600;
+      }
+    }
+  }
+}
+
+.applicant-details-listing{
+  width: 100%;
+  float: left;
+  display: block;
+  padding-top: 30px;   border-bottom: 1px solid $light-white-gray;
+  margin-bottom:15px;
+}
+.applicant-listing-block{
+  width: 100%;
+  float: left;
+  display: block;
+  padding-bottom: 25px;
+  .left-block-detail{
+    width: 75%;
+    float: left;
+    display: flex;
+   .checkbox-lf{
+     width: auto;
+     float: left;
+   }
+   .aplicant-personal-detail{
+     width: 100%;
+     float: left;
+     padding-left: 15px;
+     display: flex;
+     .user-icon-img{
+       float: left;
+       display: block;
+       width: 16px;    padding-top: 1px;
+     }
+  
+   } 
+  }
+
+  .right-block-detail{
+    width: 20%;
+    float: right;
+    display: block;
+    .date-block-inner{
+      float: left;
+      display: block;
+     
+      p{
+        width: auto;
+        float:right;
+        font-weight: $font-weight-600;
+        font-size: $common-small-font;
+        text-align: right;
+        display: flex;
+        span{
+          float: left;
+          margin-top: 2px;
+          font-size: 17px;
+        }
+            }
+            .request-date{
+              font-size: 11px;
+              font-weight: $font-weight-300;
+              display: block;
+              width: 100%;
+            }
+    }
+  }
+}
+.user-detail-aplicant{
+  width:auto;
+ float: left;
+display: block;     
+}
+.applicant-name{
+  float: left; width: 100%;padding-bottom: 7px;
+  p{
+    float: left;
+    width: auto;
+    font-size: $font-size-16;
+    font-weight: $font-weight-600;
+    color: $gray-text-color;
+  }
+  span{
+    float: left;
+    width: auto;
+    font-size: $font-size-16;   color: $gray-text-color;
+    font-weight:$font-weight-300;
+    padding-left: 5px;
+  }
+  
+    }
+    .applicant-deails-list{
+      float: left;
+      width: 100%;
+      padding-bottom: 7px;
+      p{
+        float: left;
+        width: auto;
+        font-size: $font-size-12;
+        font-weight: $font-weight-400;
+        color: $gray-text-color;
+      }
+      span{
+        float: left;
+        width: auto;
+        font-size: $font-size-12;   
+        font-weight:$font-weight-400;
+        padding-left: 5px;    line-height: 20px;
+      }
+      .small-icon{
+        width: 10px;
+        float: left;
+        margin-top: 4px;
+      }
+    }
+
+    .calander-icon{
+      width: 17px;
+      margin-right: 10px;
+    }
+    .total-aplication-lf{
+      float: left;
+      display: block;
+      width: auto;
+      padding-right: 15px;
+    }
+    .total-aplication-lf{
+      float: left;
+      display: block;
+      width: auto;
+    }
+.total-aplication-rt{
+  float: left;
+  width: auto;
+}
+.nonimmigrant-visa-box{
+  width: 100%;
+  float: left;
+  display: block;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+  background: #fff;
+  border-radius: 20px;    margin-bottom: 30px;
+  .nonimmigrant-visa-top{
+    width: 100%;
+    float: left;
+    padding: 30px 20px 25px;
+
+    .head-lf{
+      float: left;
+      width: auto;
+      font-size: $font-size-20;
+      display: block;
+  font-weight: $font-weight-600;
+    }
+    .head-icon{   display: block;
+      float: right;
+
+      width: 20px;
+      img{
+        border-radius: 3px;    margin-top: 8px;
+      }
+    }
+  }
+}  .nonimmigrant-visa-middle{
+  padding: 0px;   width: 100%;
+  float: left;    border-top: 1px solid $light-white-gray;
+  display: block;
+  border-bottom: 1px solid $light-white-gray; 
+  ul{
+    width: 100%;
+  float: left; 
+  li{
+    width: 100%;
+    float: left; 
+    padding: 0px 20px;
+
+    &:hover{
+      background: $light-white-gray;
+    }
+    .nonimmigrant-inner-block{
+      width: 100%;
+      float: left; 
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px dotted $light-white-gray; 
+      .left{
+        float: left;
+        width: 60%;
+         display: block;
+         p{
+           float: left;  width: 100%;
+    display: block;
+    font-size: $font-size-16;
+    font-weight: $font-weight-600;
+    color: $backcolor;     float: left;  width: 100%;
+    display: block;
+span{
+  float: left;
+  padding-right: 10px;   font-size: $font-size-16;
+  width: auto;
+  font-weight: $font-weight-600;    color: $backcolor; width: 23px;
+}
+         }
+         .sub-text{
+           font-size: $font-size-13;
+   float: left;  width: 100%;
+           padding-left:23px;
+           padding-top:10px;
+         }
+      }
+      .right{
+        float: right;
+        width: 40%;
+      
+        p{
+          width: 100%;
+          float: left;
+          font-size: $font-size-16;
+          text-align: right;
+        }
+        span{
+          font-size: $font-size-13;   width: 100%;
+          float: left;      text-align: right;
+          padding-top: 10px;
+        }
+      }
+    }
+    &:last-child{
+      .nonimmigrant-inner-block{
+        border-bottom: 0;
+        padding-bottom: 25px;
+      }
+    }
+      &:first-child{
+        .nonimmigrant-inner-block{
+        padding-top: 25px;}}
+    
+  }
+
+  }
+}
+.total-block{
+  display: block;
+  width: 100%;
+  padding:22px 20px 22px;
+  float: left;
+p{
+  float: left;
+  width: auto;
+font-size: $font-size-20;
+color: $backcolor;    line-height: 30px;
+font-weight: $font-weight-600;    }
+
+span{
+  float: right;   font-size: $font-size-20;
+  color: $backcolor;
+font-weight: $font-weight-600;
+  width: auto;
+} }
+.border-radious-12{
+  border-radius: 12px;
+}
+.dashboardbottom-footer{
+  width: 100%;
+  position: absolute;
+    bottom: 0;
+    padding:28px 40px 26px 40px;
+display: block;
+background: $light-white-gray;
+.top-p{
+  width: 100%;
+  float: left;
+  display: block;
+  font-size: $font-size-12;
+}
+.middile-p{
+  width: 100%;
+  float: left;
+  display: block;
+  font-size: $font-size-15;
+  padding: 10px 0;
+  span{
+    font-weight: $font-weight-600
+  }
+}
+}
+
+
+.navcont {
+  position:fixed;
+  width:80px;
+  top: 50%;
+  height: auto;
+  z-index: 100;
+  background-color: #202020;
+  overflow: hidden;
+    right:0;
+  transition: width 0.3s ease;
+  cursor: pointer;
+    right: 10px;
+  box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.4);background: #FFFFFF;
+box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+border-radius: 52px;
+transform: translate(-0%, -50%);
+}
+.navcont:hover {
+  width: 300px;border-radius:30px;
+}
+
+.navcont ul{
+  padding-top: 40px;
+  float: left;
+}
+
+.nav__items--rt-fixed {
+  padding-bottom: 10px;
+  float: left;
+  width: 100%;
+}
+.nav__items--rt-fixed a {
+  display: flex;    padding-left: 24px;
+}
+
+.nav__items--rt-fixed a p{
+      position: relative;
+  display: none;
+  padding-right: 15px;
+  transition: all 0.3s ease;
+  margin-left: 25px;
+  text-decoration: none;
+  color: $secondary-greay;
+  font-weight: 300;
+  font-size:$font-size-16;
+  float: right;
+    opacity: 0;
+     width: 215px;
+    text-align: right;
+    line-height: 45px;
+}
+
+.nav__items--rt-fixed a:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 2px;
+  background: radial-gradient(circle at 94.02% 88.03%, #54a4ff, transparent 100%);
+  opacity: 0;
+  transition: all 0.5s ease;
+  z-index: -10;
+}
+.navcont:hover a p {
+  opacity: 1;
+    float: left;
+    display: block;
+}
+.nav__items--rt-fixed a svg {
+  width: 40px;
+  height: 40px;
+  position: relative;
+ left:0px;
+    float: right;
+   border-radius:  50%;
+  cursor: pointer;
+    background: #fff;    margin-left: -131px;
+    border: 1px solid $light-blue-color;
+}
+.nav__items--rt-fixed a span{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  right: 0px;
+  float: right;
+  border-radius: 50%;
+  font-size: 22px;
+  text-align: center;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid $light-blue-color;
+  color: $light-blue-color;
+  line-height: 37px;    margin-right: 19px;    margin-bottom: 40px;
+}
+.nav__items--rt-fixed a span:after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 49px;
+  position: absolute;
+  bottom: -50px;
+  margin-left: 19px;;
+  border-left: 1px dashed $light-blue-color;
+}
+.nav__items--rt-fixed:last-child a span::after{display: none;} 
+.navcont:hover .nav__items--rt-fixed a svg {
+    background: $light-blue-color;    margin-left: 0px;
+}
+.navcont:hover .nav__items--rt-fixed a span {
+   margin-left: 0px;
+
+}
+.navcont:hover .nav__items--rt-fixed a:hover span {
+  background: #4F6895;  
+  color: #fff;
+}
+.navcont:hover .nav__items--rt-fixed a:hover p {
+  color: #000;
+}
+.navcont:hover  .nav__items--rt-fixed a {
+  padding-left:0px;
+}
+.user-icon-img span{
+  font-size: 16px;
+}
+
+.icon-new-lf-mydashboard, .icon-new-lf-doucments, .icon-new-lf-help, .icon-new-lf-myapplication, .icon-new-lf-notification, .icon-new-lf-signout, .icon-new-lf-support{
+  font-size: 16px;
+}
+.mobile-right-block-top{
+  display: none;
+}
+.application-page-top .slick-next:before {
+  position: relative;
+  top: 5px;   content: " ";
+  border-right: 2px solid #000;
+  border-top: 2px solid #000;
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  cursor: pointer;
+  display: block;
+}
+
+.application-page-top .slick-prev:before {
+  position: relative;
+  top: 5px;
+  right: -6px;
+  content: " ";
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  cursor: pointer;
+  display: block;
+}
+.application-page-top .slick-initialized .slick-slide {
+  margin-right: 10px;
+}
+.nav__items--rt-fixed a span.right-toggle-active{
+  width: 45px;
+  height: 45px;
+  right: 4px;line-height: 44px;
+  margin-right: 10px;background: #4F6895;
+  color: #fff;
+}
+  .nav__items--rt-fixed a span.right-toggle-active:after {
+  margin-left: 22px;
+}
+.nav__items--rt-fixed a span.icon-tick-mark, 
+.nav__items--rt-fixed a span.completed-icon {
+  background: $green-color;    
+  border: 1px solid $green-color;
+}
+.navcont:hover .nav__items--rt-fixed a:hover span.icon-tick-mark, .navcont:hover .nav__items--rt-fixed a:hover span.completed-icon {
+  background: $green-color; 
+  color: #fff;
+}
+.nav__items--rt-fixed:last-child{
+  padding-bottom: 0;
+}
+.mobile-logo{
+display: none;
+}
+/*======Dashboard MY APP STYLE END==============*/
+
+@media only screen and (max-width: 1900px) {
+  .mydashboard-inner {
+    padding: 30px 20px 25px;
+}
+}
+@media only screen and (max-width: 1700px) {
+  .mydashboard-inner {
+    padding: 30px 20px 25px;
+}
+.my-dashboard-top-grid {
+  gap: 0px 23px;
+}
+.mydashboard-inner .grid-dashboard-innertop .gird-left-icon {
+  width: 34px;
+}
+.mydashboard-inner .grid-dashboard-innertop .gird-left-icon span {
+  font-size: 31px;
+  padding-top: 2px;
+}
+.mydashboard-inner .grid-dashboard-innertop .count-block {
+  padding-left: 6px;
+  padding-right: 6px;
+  font-size: 35px;
+}
+.mydashboard-inner .grid-dashboard-innertop .count-status {
+  font-size: 13px;
+}
+.mydashboard-inner .dashbrd-inner-text {
+  font-size: 12px;
+}
+.sidebar .sidebarinner .nav-links li a {
+  padding: 20px 30px;
+}
+.dashboaard-side-nav-footer {
+  padding: 25px 10px 31px 23px;
+}
+.my-application-block-grid .right-add-applicant {
+  width: 42%;
+}
+}
+
+@media only screen and (max-width: 1500px) {
+  .mydashboard-inner .grid-dashboard-innertop .gird-left-icon {
+    width: 25px;
+}
+.mydashboard-inner .grid-dashboard-innertop .gird-left-icon span {
+  font-size: 25px;
+}
+.mydashboard-inner .grid-dashboard-innertop .count-block {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 24px;
+  line-height: 28px;
+}
+.mydashboard-inner .grid-dashboard-innertop .count-status {
+  padding-top: 13px;
+}
+.dashboard-block-section {
+  grid-template-columns: repeat(3, 1fr) ;
+}
+.my-dashboard-top-grid {
+  grid-template-columns: repeat(4, 1fr) ;
+}
+/*======Dashboard MY APP STYLE START==============*/
+.my-application-block-grid {
+  width: 90%;
+}
+.my-application-block-grid .left-add-applicant {
+  width: 55%;
+}.applicant-listing-block .right-block-detail {
+  width: 23%;
+}
+.sidebar .sidebarinner .nav-links li a {
+  padding: 18px 30px;
+}
+.dashboaard-side-nav-footer {
+  padding: 25px 10px 31px 23px;
+}.my-application-block-grid .right-add-applicant {
+  width: 40%;
+}
+.total-block p {
+  font-size: 19px;
+  line-height: 19px;
+}
+.total-block span {
+  font-size: 19px;
+}
+/*======Dashboard MY APP STYLE END==============*/
+}
+@media only screen and (max-width: 1360px) {
+  .total-block p {
+    font-size: 18px;
+    line-height: 19px;
+  }
+  .total-block span {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .dashboard-block-section {
+    grid-template-columns: repeat(2, 1fr);
+}
+/*======Dashboard MY APP STYLE START==============*/
+.my-appoinment-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+.my-appoinment-block {
+  width: 90%;
+}
+.total-block p {
+  font-size: 18px;
+}
+/*======Dashboard MY APP STYLE END==============*/
+
+}
+
+@media only screen and (max-width: 1200px) {
+  .my-dashboard-top-grid {
+    gap: 23px 23px;grid-template-columns: repeat(3, 1fr);
+}
+/*======Dashboard MY APP STYLE START==============*/
+.my-appoinment-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+.my-appoinment-block {
+  width: 100%;
+}
+.my-application-block-grid .left-add-applicant {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.my-application-block-grid .right-add-applicant {
+  width: 100%;
+}
+.application-page-top ul li {
+  margin-top: 10px;
+}
+.application-page-top {
+  width: 95%;
+}
+.my-application-block-grid {
+  width: 100%;
+}
+.my-application-block-grid .right-add-applicant {
+  margin-bottom: 40px;
+}
+.application-page-top ul {
+  width: 100% !important;
+}
+.application-page-top {
+  margin-left: 20px;    margin-top: 0px;
+}
+/*======Dashboard MY APP STYLE END==============*/
+}
+
+@media only screen and (max-width: 980px) {
+  .humburger .line {
+    display:block;
+  }
+  .sidebar.close .nav-links li .sub-menu {
+    display: none;
+  }
+  .sidebar {
+    width: 250px;
+    position: absolute;
+    left: -250px;
+    z-index: 100;     transition: transform 0.4s ease;
+    transform: translateX(-100px);
+  }
+  .sidebar.close {
+    width: 250px;  left: 0px;    opacity: 1;    position: absolute;
+    transform: translateX(0);    width: 100%;
+    background: #0000003d;
+  }
+  .home-section {
+  
+    width: 100%;
+    left: 0;
+  }
+  .sidebar.close ~ .home-section {
+    left: 0px;
+    width: calc(100%);
+    z-index: 1;
+    
+  }
+  .bx-menu {
+      display: block;
+      z-index: 100;
+  }
+  .hamber-menu{
+    right: -197px; margin-top: 22px;
+  }
+  .sidebar.close .hamber-menu{
+    right: 0;
+    margin-top: 22px;
+  }
+  .my-dashboard-top-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+.my-dashboard-middle {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.my-dashboard-content {
+  padding-top: 26px;
+}
+.my-dashboard-top {
+  padding-left: 30px;
+  .top-main-head, .top-text-my-dashboard{
+    padding-left: 0;
+  }
+}
+.dashboard-bottom-block {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+/*======Dashboard MY APP STYLE START==============*/
+.top-main-head {
+  font-size: 21px;
+}
+.mobile-right-block-top{
+  position: relative;
+  display: block;
+  float: left;    width: 100%;
+}
+.mobile-right-block-top .navcont{
+  width: 100%;
+  position: relative;
+  border-radius: 30px;
+  height: auto;
+  float: left;
+  z-index: 1;
+  overflow: inherit;
+  -webkit-transition: 0;
+  transition: 0;
+  -webkit-transform: inherit;
+  transform: inherit;
+  border: 1px solid $secondary-greay;
+  box-shadow: none;
+  right: inherit;
+  top: inherit;
+  margin-bottom: 30px;
+  .nav__items--rt-fixed a p {
+    display: block;
+    opacity: 1;
+    text-align: left;
+    width:auto;
+    margin-left: 5px;
+    display:none;
+}
+.nav__items--rt-fixed a span:after {
+  margin-left: 17px;
+}
+.nav__items--rt-fixed a span{
+  margin-right: 0px;
+}
+}
+
+.nav__items--rt-fixed {
+  width: 20%;
+}
+.nav__items--rt-fixed a {
+  display: block;
+  padding-left: 0;
+}
+.nav__items--rt-fixed a span {
+  width: 40px;
+  height: 40px;
+  right:30%;
+  line-height: 36px;
+  margin-right: 10px;
+  font-size: 20px;margin-bottom: 0;
+}
+.navcont ul {
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 10px;    width: 100%;
+  padding-bottom: 20px;
+}
+.nav__items--rt-fixed {
+  padding-bottom: 0px;
+}
+.desktop-right-block{
+display: none;
+}.nav__items--rt-fixed a span:after {
+display: none;
+}
+
+.nav__items--rt-fixed a span.right-toggle-active {
+  width: 40px;
+  height: 40px;
+  right: 30%;
+  line-height: 36px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.nav__items--rt-fixed a span.right-toggle-active:after {
+  margin-left: 21px !important;
+}
+.application-page-top {
+  margin-left: 20px;
+  margin-top: 30px;
+  padding-bottom: 68px;
+
+}
+.mobile-logo{
+  width: 150px;
+
+  float: left;
+  display: block;
+}
+.aplication-top1{
+  padding-bottom: 35px;
+  margin-left: 0;
+  padding-top: 0;
+}
+.my-appontment-main-top{
+  margin-top: 40px;
+}
+
+/*======Dashboard MY APP STYLE END==============*/
+}
+@media only screen and (max-width: 767px) {
+  .dashboard-block-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .myappoinment-block-top {
+    padding: 25px 20px 25px;
+}
+.myappoinment-block-bottom {
+  padding: 25px 20px 0px;
+}
+.create-task-inner-block img {
+  max-height: 370px;
+}
+.dashboard-innercontent-block {
+  padding-left: 0px;
+  padding-right: 40px;
+}
+.dashboard-inner-top .dashboard-welcome-top-text {
+  width: 80%;
+  padding-right: 20px;
+  margin-left: 20px;
+}
+.dashboard-inner-top .dashboard-welcome-top-text p {
+  font-size: 17px;
+}
+.top-flx-welcome{
+  display: flex;
+  float: left;
+  width: 100%;
+}
+.dashboard-inner-top .welcome-icon {
+  width: 36px;
+}
+/*======Dashboard MY APP STYLE START==============*/
+.my-appoinment-grid {
+  grid-template-columns: repeat(1, 1fr);
+}
+.my-appoinmentcancel-bt {
+  float: right;
+  width: 100%;
+  padding-top: 35px;
+}
+.applicant-listing-block .left-block-detail .aplicant-personal-detail {
+  padding-left: 6px;
+
+}
+.total-aplication-lf {
+  padding-right: 10px;
+}
+.applicant-listing-block .right-block-detail .date-block-inner {
+  padding-left: 63px;
+  width: 100%;
+}
+.application-page-top {
+  width:100%;  margin-left: 0;
+}
+.my-dashboard-top .signup-password-top {
+  margin-top: -49px;
+}
+
+
+/*======Dashboard MY APP STYLE END==============*/
+}
+
+
+@media only screen and (max-width: 480px) {
+  .my-dashboard-top-grid {
+    grid-template-columns: repeat(1, 1fr);
+}
+.aponment-schdule-block .right-block {
+  font-size: 15px;
+}.aponment-schdule-block img {
+  margin-right: 10px;
+}
+.sub-head {
+  font-size: 18px;
+}
+/*======Dashboard MY APP STYLE START==============*/
+.my-application-block-grid .left-add-applicant .applicant-visa-details .inner-aplicant-block .contnent-block span {
+  width: 100%;
+  text-align: left;
+}
+.my-application-block-grid .left-add-applicant .applicant-visa-details .inner-aplicant-block .contnent-block p {
+
+  width: 100%;
+}
+.total-aplicant-block .toal-top-aplicat .add-aplicant-button {
+  float: left;
+  width: 100%;
+  margin-top: 14px;
+}
+
+.applicant-listing-block .left-block-detail {
+    width: 100%;
+    display: flex;
+}
+.applicant-listing-block .right-block-detail {
+  width: 100%;
+}
+.applicant-listing-block .right-block-detail .date-block-inner p {
+  width: 100%;
+  
+  text-align: left;
+  display: block;
+}
+.applicant-listing-block .right-block-detail .date-block-inner .request-date {
+  
+  width: 100%;
+}
+.total-block p {
+  font-size: 18px;
+  width: 50%;
+}
+.nonimmigrant-visa-middle ul li .nonimmigrant-inner-block .left p {
+  font-size: 14px;
+}
+.nonimmigrant-visa-middle ul li .nonimmigrant-inner-block .left p span {
+  padding-right: 5px;
+  font-size: 14px;
+  width:13px;
+}.app-left-location-padding {
+  padding-left: 19px;
+}
+.nonimmigrant-visa-middle ul li .nonimmigrant-inner-block .left .sub-text {
+  padding-left: 12px;
+}
+.nav__items--rt-fixed a span {
+  right: 18%;
+}
+.nav__items--rt-fixed a span.right-toggle-active {
+
+  right: 18%;
+}
+/*======Dashboard MY APP STYLE END==============*/
+}
+

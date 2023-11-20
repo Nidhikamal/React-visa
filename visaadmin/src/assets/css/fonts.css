@@ -1,0 +1,196 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?zcdg5k');
+  src:  url('fonts/icomoon.eot?zcdg5k#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?zcdg5k') format('truetype'),
+    url('fonts/icomoon.woff?zcdg5k') format('woff'),
+    url('fonts/icomoon.svg?zcdg5k#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-left-arrow:before {
+  content: "\e936";
+}
+.icon-right-arrow-1:before {
+  content: "\e937";
+}
+.icon-export-icon:before {
+  content: "\e932";
+}
+.icon-flag-icon:before {
+  content: "\e933";
+}
+.icon-upload-icon:before {
+  content: "\e934";
+}
+.icon-view-icon:before {
+  content: "\e935";
+}
+.icon-calndr-top-menu:before {
+  content: "\e92e";
+}
+.icon-menusearch-top-menu:before {
+  content: "\e931";
+}
+.icon-repeat-icon:before {
+  content: "\e923";
+}
+.icon-total-slots:before {
+  content: "\e928";
+}
+.icon-clock-icon:before {
+  content: "\e92a";
+}
+.icon-clock-small:before {
+  content: "\e92d";
+}
+.icon-select-slot-icon:before {
+  content: "\e92f";
+}
+.icon-more-detila-bullet:before {
+  content: "\e930";
+}
+.icon-super-admin-drop-down-arrow1:before {
+  content: "\e92c";
+}
+.icon-super-admin-tree-cion1:before {
+  content: "\e92b";
+}
+.icon-super-admin-delete:before {
+  content: "\e921";
+}
+.icon-super-admin-document:before {
+  content: "\e922";
+}
+.icon-super-admin-eye:before {
+  content: "\e924";
+}
+.icon-super-admin-pencile:before {
+  content: "\e925";
+}
+.icon-super-admin-pluse:before {
+  content: "\e926";
+}
+.icon-super-admin-setting:before {
+  content: "\e927";
+}
+.icon-super-admin-up-and-down:before {
+  content: "\e929";
+}
+.icon-tick-mark:before {
+  content: "\e920";
+
+}
+.icon-right-arrow:before {
+  content: "\e91f";
+}
+.icon-add-applicant:before {
+  content: "\e91e";
+}
+.icon-total-schedule1:before {
+  content: "\e91d";
+}
+.icon-adult-icon:before {
+  content: "\e914";
+}
+.icon-child-applicant:before {
+  content: "\e915";
+}
+.icon-new-lf-doucments:before {
+  content: "\e916";
+}
+.icon-new-lf-help:before {
+  content: "\e917";
+}
+.icon-new-lf-myapplication:before {
+  content: "\e918";
+}
+.icon-new-lf-mydashboard:before {
+  content: "\e919";
+}
+.icon-new-lf-notification:before {
+  content: "\e91a";
+}
+.icon-new-lf-signout:before {
+  content: "\e91b";
+}
+.icon-new-lf-support:before {
+  content: "\e91c";
+}
+.icon-right-icon-applicant:before {
+  content: "\e90f";
+}
+.icon-right-icon-appoinment:before {
+  content: "\e910";
+}
+.icon-right-icon-book-slot:before {
+  content: "\e911";
+}
+.icon-right-icon-choose-pickup:before {
+  content: "\e912";
+}
+.icon-right-icon-make-payment:before {
+  content: "\e913";
+}
+.icon-dashboard-notification:before {
+  content: "\e90c";
+}
+.icon-eye-open:before {
+  content: "\e90d";
+}
+.icon-dashboard-my-application:before {
+  content: "\e90e";
+}
+.icon-dashboard-document:before {
+  content: "\e907";
+}
+.icon-dashboard-help:before {
+  content: "\e908";
+}
+.icon-dashboard-sign-out:before {
+  content: "\e909";
+}
+.icon-dashboard-upport:before {
+  content: "\e90a";
+}
+.icon-dashboard-visa:before {
+  content: "\e90b";
+}
+.icon-dashboard:before {
+  content: "\e906";
+}
+.icon-modal-close:before {
+  content: "\e905";
+}
+.icon-how-towork:before {
+  content: "\e900";
+}
+.icon-backarrow:before {
+  content: "\e901";
+}
+.icon-emil-authentication:before {
+  content: "\e902";
+}
+.icon-ice-icoj:before {
+  content: "\e903";
+}
+.icon-terms-and-condition:before {
+  content: "\e904";
+}

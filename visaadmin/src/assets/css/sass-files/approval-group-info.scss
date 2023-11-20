@@ -1,0 +1,212 @@
+.pending-approval
+{
+    font-size: 14px;
+}
+.left-table-brdr-aprove
+{
+    
+    border-top: 1px solid #D9D9D9;
+    margin-top: 20px;
+}
+.wizard-setp-list-inner-block-aprove
+{
+    width: 100%;
+    float: left;
+    display: block;
+    border-bottom: 1px solid #D9D9D9;
+    padding: 20px 15px 20px;
+}
+.wizard-setp-list-inner-block-aprove .list-left-aprove {
+    width: 50%;
+    float: left;
+    font-size: 12px;
+    // font-weight: 600;
+    display: block;
+    color: #000;
+}
+.wizard-setp-list-inner-block-aprove  .list-center-aprove
+{
+    margin: 0 auto;
+    display: block;
+    float: inherit;
+    font-size: 12px;
+}
+.wizard-setp-list-inner-block-aprove .list-center-aprove p
+{
+    font-size: 14px;
+    color: red;
+}
+
+.wizard-setp-list-inner-block-aprove .list-center-aprove-normal p
+{
+    color: #000;
+    font-size: 12px;
+}
+.wizard-sub-mian-font-aprove
+{
+    font-weight: 700;
+    display: flex;
+}
+.wizard-sub-mian-font-aprove img{
+    width: auto;
+}
+.wizard-sub-mian-font-aprove-p
+{
+    color: #F95B02;
+    font-weight: 400;
+    font-size: 12px;
+    padding-bottom: 3px;
+}
+.wizard-sub-mian-font-aprove-span
+{
+    padding-left: 10px;
+}
+.wizard-sub-mian-font-aprove-p2
+{
+    padding-left: 34px;
+    padding-top: 3px;
+}
+.blue-button-aprove
+{
+    color: #0D192E;
+    border: 1px solid #0D192E;
+    background: #fff;
+    display: flex;
+    
+    
+}
+.apply-btn-aprove {
+    font-weight: 500;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.aply-btn-right
+{
+margin-right: 20px;
+}
+.aprove-p
+{
+font-weight: 600;
+font-size: 14px;
+}
+.nav-tabs-aprove
+{
+    border-bottom: 1px solid #d9d9d9;
+    background-color: #ffffff;
+}
+.nav-tabs-aprove .nav-item.show .nav-link, .nav-tabs-aprove .nav-link.active {
+    color: #495057;
+    background-color: #d9d9d9;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 12px;
+    border-radius: 0px;
+    border-bottom: 2px solid #f1f0f0 !important;
+}
+.nav-tabs-aprove > li.active > a, .nav-tabs-aprove > li.active > a:focus, .nav-tabs-aprove > li.active > a:hover
+{
+    cursor: default;
+    background-color: #F1F0F0 !important;
+    border: 0px solid #ddd !important;
+    border-bottom-color: transparent;
+    border-bottom: 2px solid #f1f0f0 !important;
+    font-weight: 300;
+}
+.nav-tabs-aprove > li > a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    border: 0px solid #ffffff;
+    font-size: 12px;
+    font-weight: 300;
+    // padding: 15px 35px;
+    padding: 8px 25px;
+    text-transform: capitalize;
+    border-radius: 0px;
+}
+.document-table-aprove .document-left-head
+{
+    font-weight: 600;
+    font-size: 12px;
+    color: #525252;
+    text-transform: capitalize;
+}
+.document-table-aprove .document-right-head
+{
+    font-weight: 400;
+    font-size: 12px;
+    color: #525252e0;
+}
+.document-table-aprove table tbody tr {
+    padding-bottom: 8px;
+    margin-top: 0px;
+    width: 100%;
+    float: left;
+    background: #fff;
+    border-radius: 0px;
+    height: auto;
+    padding-top: 8px;
+    display: flex;
+    padding-left: 0px;
+    border-bottom: 1px solid #d9d9d9;
+}
+.document-table-aprove table tbody tr td
+{
+padding-top: 0px;
+}
+.document-table-aprove table tbody tr td
+{
+padding-top: 0px;
+}
+.tab-content-aprove
+{
+    padding: 0px 0px;
+}
+.document-table-aprove table thead
+
+{
+    background-color:#F3F0F0;
+    font-weight: 600;
+    font-size: 13px !important;
+    width:100% !important;
+}
+.document-table-aprove table >thead >tr >th{
+    font-weight: 600;
+    font-size: 13px !important; 
+}
+.document-table-aprove table thead tr{
+    border-bottom: 1px solid #d9d9d9;
+}
+.document-table-aprove-head {
+    font-size: 13px;
+}
+.document-table-aprove-head .img-action
+{
+    height: 20px !important;
+    width: auto !important;
+}
+.eye-hover-aprve:hover,.download-hover-aprove:hover
+{
+    color: blue;
+}
+.document-right-head-a
+{
+    display: -webkit-inline-box;
+    vertical-align: sub;
+}
+.document-right-head-a1
+{
+    display: -webkit-inline-box;
+    vertical-align: super;
+}
+
+
+@media only screen and (max-width: 1070px)
+{
+    .document-table-aprove table thead {
+        width: 100% !important;
+        display: flex;
+    }
+}
+

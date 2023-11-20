@@ -1,0 +1,114 @@
+.user-manage-one-grid {
+  float: left;
+  width: 100%;
+  display: block;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr) !important;
+  gap: 30px 20px;
+  grid-auto-rows: minmax(0px, auto);
+  padding-bottom: 10px;
+}
+
+.user-manage-two-grid {
+  float: left;
+  width: 100%;
+  display: block;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 30px 20px;
+  grid-auto-rows: minmax(0px, auto);
+  padding-bottom: 10px;
+}
+
+.user-mar-top {
+  margin-top: 30px;
+}
+
+.user-mar-bot {
+  margin-bottom: 30px;
+}
+
+.user-manage-top-bord {
+  border-top: 1px solid #ddd;
+}
+
+.font-weght-b {
+  font-weight: 600 !important;
+}
+
+.high-auto {
+  height: auto !important;
+}
+
+.user-manag-table-input-l {
+  width: 45%;
+  float: left;
+}
+
+.user-manag-table-input-r {
+  width: 45%;
+  float: left;
+  margin-left: 10px;
+}
+
+.model-body-black {
+  background-color: #000;
+  border-radius: 5px;
+}
+
+.model-body-black-txt {
+  color: #fff;
+  text-align: center;
+  padding: 25px;
+}
+
+.width-100 {
+  width: 100% !important;
+}
+
+.user-manage-top-tab > li {
+  float: left;
+  margin-bottom: -2px;
+  margin-top: -2px;
+  width: 25% !important;
+}
+
+.user-manage-top-tab > li > a {
+  margin-right: 0px;
+  line-height: 1.42857143;
+  border: 1px solid transparent;
+  border-radius: 0px 0px 0 0;
+  border-left: 0.5px solid #D9D9D9;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 15px 35px;
+  text-transform: none;
+  text-align: center;
+}
+
+.user-manage-top-bord1 {
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.user-manage-table-new .document-table .table > thead > tr > th, .user-manage-table-outer .document-table .table > tbody > tr > td {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+.user-manage-table-new .document-table .table > thead > tr > th {
+  line-height: 20px;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .user-manage-two-grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 15px 20px;
+  }
+}/*# sourceMappingURL=user-manage.css.map */

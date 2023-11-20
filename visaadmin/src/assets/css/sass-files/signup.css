@@ -1,0 +1,18 @@
+.signup-top {
+  width: 100%;
+  float: left;
+  display: block;
+  padding: 25px 0;
+}
+
+.signup-banner {
+  width: 100%;
+  float: left;
+  display: block;
+  background: url(../images/signup-banner.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+/*# sourceMappingURL=signup.css.map */

@@ -1,0 +1,107 @@
+.user-dash-main-box {
+  width: 60%;
+  padding-left: 10%;
+}
+
+.user-dash-head-box {
+  padding: 90px 70px 100px 70px;
+}
+
+.user-dash-page-grid {
+  float: left;
+  width: 100%;
+  display: block;
+  margin-top: 0px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 50px 20px;
+  grid-auto-rows: minmax(0px, auto);
+  padding-bottom: 30px;
+}
+
+.t-align-c {
+  text-align: center;
+}
+
+.user-dash-sub-txt {
+  font-size: 13px;
+  padding-bottom: 10px;
+}
+
+.user-dash-txt-head {
+  float: left;
+  font-size: 28px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.user-dash-txt {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  padding-top: 15px;
+}
+
+.m-t-30 {
+  margin-top: 30px;
+}
+
+.add-wized-innernew {
+  width: 100%;
+  float: left;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .user-dash-main-box {
+    width: 75%;
+    padding-left: 0%;
+  }
+  .user-dash-head-box {
+    padding: 90px 70px 100px 65px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .user-dash-main-box {
+    width: 75%;
+    padding-left: 0%;
+  }
+  .user-dash-head-box {
+    padding: 90px 70px 100px 60px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .user-dash-main-box {
+    width: 75%;
+    padding-left: 0%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .user-dash-main-box {
+    width: 90%;
+    padding-left: 0%;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .user-dash-page-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 30px 20px;
+    grid-auto-rows: minmax(0px, auto);
+    padding-bottom: 30px;
+  }
+  .user-dash-main-box {
+    width: 100%;
+    padding-left: 0%;
+  }
+  .user-dash-head-box {
+    padding: 90px 70px 100px 134px;
+  }
+}
+@media only screen and (max-width: 786px) {
+  .user-dash-head-box {
+    padding: 90px 70px 100px 50px;
+  }
+}/*# sourceMappingURL=user-dash.css.map */

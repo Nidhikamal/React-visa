@@ -1,0 +1,194 @@
+.nottifica-grid-2 {
+    float: left;
+    width: 100%;
+    display: block;
+    margin-top: 0px;
+    display: -ms-grid;
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 30px 30px;
+    grid-auto-rows: minmax(0px, auto);
+    padding-bottom: 30px;
+}
+.notti-sub-head {
+    float: left;
+    width: auto;
+    font-size: 16px;
+    display: block;
+    color: #000;
+    font-weight: 300;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.notti-cont-bottom{
+    width: 100%;
+    line-height: 24px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+.notti-cont-bottom-bg {
+    
+    background-color: #F9F9F9;
+}
+.notifi-head {
+    padding-left: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 25px;
+}
+.notifi-f-r {
+    float: right;
+}
+.notifi-all-filtr {
+    vertical-align: super;
+    font-size: 16px;
+    font-weight: 400;
+    padding-right: 18px;
+}
+
+.dropbtn {
+    background-color: #ffffff;
+    color: black;
+    padding: 1px 10px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    vertical-align: bottom;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #fff;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+.notifi-block-bordr {
+    border-right: 1px solid #ddd;
+    height: 100%;
+}
+.notifi-head-right {
+    padding-left: 0px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
+}
+.p-b-30 {
+    padding-bottom: 30px;
+}
+.l-h-20 {
+    line-height: 20px;
+}
+.noffitfy-table {
+    width: 100%;
+    float: left;
+    margin-top: 1px;
+    display: block;
+}
+.p-r-30 {
+    padding-right: 30px;
+}
+.noffitfy-table table > tbody > tr > td { 
+    font-weight: 400;
+}
+.notifi-menu-notnew {
+    background-color: #14A38B;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 14px;
+    margin-left: 8px;
+}
+.notify-head-sub-txt{
+    background-color: #E5844C;
+    padding: 4px 9px;
+    border-radius: 50px;
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: 400;
+}
+@media only screen and (max-width: 1300px){
+.noffitfy-table .width-15 {
+    width: 100% !important;
+}
+}
+@media only screen and (max-width:1200px){
+    .nottifica-grid-2 { 
+        grid-template-columns: repeat(1, 1fr) !important; 
+    }
+     
+}
+@media only screen and (max-width:768px){
+    .noffitfy-table .width-15 {
+        width: 200px !important;
+
+    }
+    .noffitfy-table{
+        width: 100%;
+    float: left;
+    display: block;
+    overflow: scroll;
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    overflow: auto;
+    margin-bottom: 15px;
+    }
+    .noffitfy-table table {
+        border-collapse: collapse;
+        /* overflow-x: auto; */
+        display: block;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        width: 350px !important;
+        float: left;
+        max-width: 10000px;
+        border: 0px solid #D9D9D9;
+    }
+    .noffitfy-table table tbody {
+        width: auto !important;
+        display: block;
+    }
+    .noffitfy-table  table tbody tr {
+        padding-bottom: 6px;
+        width: 100%;
+        float: left;
+        background: #fff;
+        border-radius: 0px;
+        height: auto;
+        padding-top: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 0px;
+        padding-left: 6px;
+        border-bottom: 1px solid #D9D9D9;
+    }
+}

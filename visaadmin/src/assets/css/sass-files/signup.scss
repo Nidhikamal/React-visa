@@ -1,0 +1,610 @@
+.signup-top{
+    width: 100%;
+    float: left;
+display: block;
+padding: 25px 0;
+}
+.signup-banner{
+    width: 100%;
+    float: left;
+    display: block;
+    background: url(../images/signup-banner.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+.sign-up-banner-text{
+    font-weight: $extra-blod-800;
+    float: left;
+   width: 400px;
+   color: $color-white;
+   font-weight: $extra-blod-800;
+   font-size: $font-size-40;
+}
+.signup-banner-bottom{
+    width: 100%;
+    float: left;
+    display: block;    font-size: $font-size-15;
+    color: $color-white;
+    padding-top: $padding-top-25;
+}
+.signup-banner-bottom span{
+    font-size: $font-size-18;
+    color: $color-white;
+    float: left;
+    padding-right: 5px;
+}
+.signup-middile{
+    width: 100%;
+    float: left;
+    display: block;
+    padding: 80px 0px;
+}
+.sign-up-left{
+    width:40%;
+    float: left;
+display: block;
+margin-right: 10%;
+}
+.sign-up-right{
+    width:50%;
+    float: right;
+    padding: 40px 30px;
+display: block;
+border: 1px solid #C9C7C7;
+border-radius: 8px;    display: flex;
+}
+
+.floating-label-group {
+	position: relative;
+	margin-bottom: 25px;
+    height:65px;
+    border: 1px solid $secondary-greay;
+ border-radius: $border-radious-8;
+ padding: 20px;
+ float: left;
+ width: 100%;
+
+	.floating-label {
+		font-size: 13px;
+		color: $secondary-greay;
+		position: absolute;
+		pointer-events: none;
+		top: 21px;
+		left: 20px;
+		transition: all 0.1s ease;
+        font-size: $font-size-16;
+        font-weight: $font-weight-300;
+	}
+
+	input:focus ~ .floating-label,
+	input:not(:focus):valid ~ .floating-label , select:focus ~ .floating-label, select:not(:focus):valid ~ .floating-label{
+        top: 13px;
+		bottom: 0px;
+		left: 20px;
+		font-size: 11px;
+		opacity: 1;
+		color: $light-blue-color;
+	}
+    .form-control{
+        margin-top: 4px;
+        border: 0;
+        outline: 0;
+        box-shadow: none;
+        background: no-repeat;
+        padding-left: 0;
+        font-weight: $font-weight-600;
+        color:  $primary-blue;
+    }
+    .form-control:focus {
+        border: 0;
+        outline: 0;
+        box-shadow: none;
+        background: no-repeat;
+    }
+}
+.email-auth{
+    width: 100%;
+    float: left;
+    display: block;
+    font-size: $font-size-12;
+color: $light-blue-color;
+padding-bottom: 20px;
+line-height: 18px;
+margin-top: -5px;
+}
+.email-auth span{
+    color: $color-orange;
+    font-size: $font-size-18;
+    float: left;
+    padding-right: 5px;
+    float: left;
+    padding-top: 0px;
+}
+.sign-up-button{
+    border-radius: $border-radious-8;
+    width: 100%;
+    float: left;
+    padding: 23px 0;
+    text-align: center;
+    background: $primary-blue;
+    color: $color-white;
+    font-size: $font-size-16;
+    font-weight: $font-weight-400;
+    text-transform: uppercase;  border: 1px solid  $primary-blue;
+}
+.sign-in-bottom-block{
+    width: 100%;
+    float: left;
+    display: block;
+    border-top: 1px solid $secondary-greay;
+    padding-top: 25px;
+    margin-top: 25px;
+    .sign-in-box{
+        border-radius: $border-radious-8;
+        width: 100%;
+        float: left;
+        padding: 23px 0;
+        text-align: center;
+        color: $primary-blue;
+        font-size: $font-size-16;
+        font-weight: $font-weight-300;
+        border: 1px solid $secondary-greay;
+        span{
+            font-weight: $font-weight-600;
+            text-transform: uppercase;
+        }
+    }
+
+}
+
+.signup-terms-left{
+    width: auto;
+    float: left;
+    display: block;   padding-right: 15px;
+    span{
+        float: left;
+        font-size: $font-size-20;
+        font-weight: $font-weight-600;
+    }
+}
+.signup-terms-right{
+    width: 90%;
+    float: left;
+    display: block;
+    span{
+        width: 100%;
+        float: left;
+        font-weight: $font-weight-600;
+        padding-bottom: 33px;
+     
+    }
+    p{
+        width: 100%;
+        float: left;
+        padding-bottom: 35px;
+        &:last-child{
+            padding-bottom: 0;
+        }
+    }
+}
+.signup-display-flex{
+    display: flex;
+}
+.signup-password-top{
+    width: 100%;
+    float: left;
+    display: block;
+    color: $primary-blue;
+    font-weight: $font-weight-600;
+    font-size: $common-small-font;    margin-top: -45px;
+    
+    a{
+        float: left;
+        width: auto;
+        display: block;    color: $primary-blue;     
+               font-size: $common-small-font;  font-weight: $font-weight-600;
+        span{
+            float: left;
+            width: auto;    color: $primary-blue;
+            padding-right: 5px;    font-weight: $font-weight-600;
+            font-size: $common-small-font;
+        }
+        &:hover{
+color: $secondary-greay;
+        }
+    }
+}
+
+.robot-image-block{
+    width: 102.5%;
+    float: left;
+    display: block;
+    margin-left: -6px;
+    margin-bottom: 25px;
+}
+.signup-password-settting{
+    float: left;
+    width: 100%;    margin-bottom: 25px;
+    .floating-label-group{
+.border-bottom{
+    width: 100%;
+    float: left;
+    display:flex;    position: absolute;
+    bottom: -14px;
+    left: 0;
+    .small-border{
+        width: 24%;
+        float: left;
+        display: block;
+        background: $secondary-greay;
+border-radius: 10px;
+height: 5px;
+margin-right: 2%;
+&:last-child{
+    margin-right: 0;
+}
+    }
+}
+    .requerd-text{
+        width: 100%;
+        float: left;
+        display: block;
+    }
+}
+}
+
+.floating-label-group input:focus ~ .border-bottom .small-border, .floating-label-group input:not(:focus):valid ~ .border-bottom .small-border{
+    background: $green-color;
+}
+.eye-icon{
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    .icon-ice-icoj{
+        color: $secondary-greay;
+        font-size: $font-size-25;
+        float: left;
+    }
+}
+.signup-terms{
+    width: 100%;
+    float: left;
+    display: block;    margin-bottom: 15px;
+}
+.styled-checkbox {
+    position: absolute; 
+    opacity: 0; 
+  
+    & + label {
+      position: relative;
+      cursor: pointer;
+      padding: 0;
+      font-size: $font-size-13;
+      a{
+          color: $electric-blue;
+      }
+    }
+    & + label:before {
+      content: '';
+      margin-right: 10px;
+      display: inline-block;
+      vertical-align: text-top;
+      width: 20px;
+      height: 20px;
+      border: 1px solid $backcolor;
+      border-radius: 3px;margin-top: -2px;
+    }
+
+    &:disabled + label {
+      color: #b8b8b8;
+      cursor: auto;
+    }
+
+    &:disabled + label:before {
+      box-shadow: none;
+      background: #ddd;
+    }
+    &:checked + label:after {
+      content: '';
+      position: absolute;
+      left: 5px;
+      top: 7px;
+      background: $backcolor;
+      width: 2px;
+      height: 2px;
+      box-shadow: 
+        2px 0 0 $backcolor,
+        4px 0 0 $backcolor,
+        4px -2px 0 $backcolor,
+        4px -4px $backcolor,
+        4px -6px 0 $backcolor,
+        4px -8px 0 $backcolor;
+      transform: rotate(45deg);
+    }
+  }
+  .required-outer{
+      margin-bottom: 40px;
+  }
+.required-red-text
+{color: $color-red;
+    float: left;
+    width: 100%;
+    position: absolute;
+    bottom: 13px;
+    left: 0;
+}
+
+.required-emaile-red-text {
+    bottom: 53px;
+}
+.last-name-required{
+    left: 15px;
+}
+.modal {
+    text-align: center;
+    padding: 0!important;
+  }
+  
+  .modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+  }
+  
+  .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+  }
+  .modal-header{
+    padding: 23px 20px;
+    border-bottom:0;
+    float: left;
+    width: 100%;  
+    .close {
+    opacity: 1;
+
+    span{
+        font-size: $font-size-16;
+        font-weight: $font-weight-400;
+    }
+}
+}
+.otp-verify-modal{
+width: 675px;
+margin: 0px auto;
+.otp-inner-block{
+    float: left;
+    width: 100%;
+    display: block;;
+
+
+.otp-modal-continer{
+    width: 435px;
+    margin: 0px auto;
+    .otp-modal-inner{
+        width: 100%;
+        float: left;
+        padding-bottom: 50px;
+        .otp-head{
+            width: 100%;
+            float: left;
+            display: block;
+            text-align: center;
+            font-size: $font-size-20;
+            color: $primary-blue;
+            font-weight: $font-weight-600;
+            margin-bottom: 15px;
+        }
+        p{
+            text-align: center;
+            width: 100%;
+            float: left;
+            display: block;
+            color:$primary-blue;     margin-bottom: 15px;
+            font-size: $common-small-font;
+        }
+        span{       text-align: center;
+            float: left;
+            width: 100%;
+            color: $color-red;   font-size: $common-small-font;     margin-bottom: 20px;
+        }
+
+       
+          form.form-outer{
+              float: left;
+              width: 100%;
+              margin-bottom: 20px;
+          .otptype{
+              display: flex;
+          input{
+            display:inline-block;
+            width:99px;
+            height:71px;
+            text-align:center;
+            border: 1px solid $secondary-greay;
+            border-radius: $border-radious-8;    margin-right: 13px;
+            font-size: $font-size-20;
+            font-weight: $font-weight-600;  color: $primary-blue;
+            &:last-child{margin-right: 0;}
+            
+          }
+          ::-webkit-input-placeholder { /* Edge */
+            font-size: $font-size-20;
+            font-weight: $font-weight-600;
+            color: $primary-blue;
+          }
+          
+          :-ms-input-placeholder { /* Internet Explorer 10-11 */
+            font-size: $font-size-20;
+            font-weight: $font-weight-600;  color: $primary-blue;
+          }
+          
+          ::placeholder {
+            font-size: $font-size-20;  color: $primary-blue;
+            font-weight: $font-weight-600;
+          }
+        }
+    }
+} 
+}
+
+}
+}
+.verify-text{
+    width: 100%;
+    float: left;
+    display: block;
+margin-top: 20px;
+a{
+    width: 100%;
+    float: left;
+    display: block;
+    font-size: $common-small-font;
+text-align: center;
+}
+}
+.sucess-tick-icon{
+    width: 87px;
+    margin: 0px auto;
+    img{
+        margin-bottom: 25px;
+    }
+}
+.sucess-bottom-mrg{
+    margin-bottom: 20px;
+}
+.sign-up-left .col-md-6{
+    position: relative;
+    padding-right: 0;
+    float: left;
+}
+
+
+
+
+/*======== Sign up setions Responsive style start===============*/
+@media only screen and (max-width: 1700px) {
+}
+
+@media only screen and (max-width: 1500px) {
+}
+
+@media only screen and (max-width: 1360px) {
+}
+
+@media only screen and (max-width: 1300px) {
+}
+
+@media only screen and (max-width: 1200px) {
+    .sign-up-left {
+        .col-md-6{
+            width: 100%;    padding-left: 0;
+         padding-right: 0;
+        }
+        .col-md-12{
+            width: 100%;    padding-left: 0;
+            padding-right: 0;
+            position: relative;
+            float: left;
+        }
+        .last-name-required {
+            left: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 980px) {
+
+    .email-auth {
+        margin-top: -6px;
+    }
+    .sign-up-left {
+        width: 45%;
+        margin-right: 5%;
+    }
+    .sign-up-left .col-md-6{
+        position: relative;
+        padding-right: 0;
+        float: left;
+        width: 100%;
+    }
+    .otp-verify-modal {
+        width: 80%;
+    }
+
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .signup-display-flex {
+        display: block;
+    }.sign-up-left {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    .sign-up-right {
+        width: 100%;    padding: 30px 20px;
+    }
+    .sign-up-banner-text {
+        font-size: 32px;
+    }
+    .signup-middile {
+        padding: 55px 0px;
+    }
+    .floating-label-group {
+       height: 60px;    padding: 16px 14px;
+    }
+    .floating-label-group .floating-label {
+        top: 18px;
+    }
+    .sign-up-button {
+        padding: 20px 0;;
+    }
+    .sign-in-bottom-block .sign-in-box {
+        padding: 20px 0;
+    }
+    .floating-label-group .floating-label {
+        left: 15px;
+    }
+    .floating-label-group input:focus ~ .floating-label, .floating-label-group input:not(:focus):valid ~ .floating-label {
+        left: 15px;
+    }
+    .signup-terms-right span , .signup-terms-right p{
+        padding-bottom: 25px;
+    }
+    .eye-icon {
+        top: 16px;
+    }
+    .signup-password-top {
+        margin-top: -35px;
+    }
+    .otp-verify-modal .otp-inner-block .otp-modal-continer {
+        width: 90%;
+    }
+
+.otp-verify-modal .otp-inner-block .otp-modal-continer .otp-modal-inner form.form-outer .otptype input {
+    width: 24%;
+    margin-right: 2%;    height: 56px;
+}.sucess-tick-icon {
+    width: 64px;
+}
+
+}
+
+
+@media only screen and (max-width: 480px) {
+    .sign-up-banner-text {
+        width: 85%;
+    }
+    .sign-in-bottom-block .sign-in-box {
+        font-size: 14px;
+    }
+}
+
+/*======== Sign up setions Responsive style END===============*/

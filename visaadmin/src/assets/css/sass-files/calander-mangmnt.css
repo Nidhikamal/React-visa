@@ -1,0 +1,519 @@
+.calander-mangmt-top-grid {
+  float: left;
+  width: 100%;
+  display: block;
+  margin-top: 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 30px 20px;
+  grid-auto-rows: minmax(0px, auto);
+  padding-bottom: 30px;
+}
+
+.cal-setup-head {
+  padding-bottom: 5px;
+  margin-top: -25px;
+}
+
+.caladr-table {
+  margin-top: -1px !important;
+}
+
+.create-hilidy {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-size: 18px;
+}
+
+.custom-date-field {
+  border: 0.5px solid #7B8EB0;
+  padding: 15px 15px;
+  font-size: 12px;
+  margin-bottom: 0px;
+  border-radius: 5px;
+  width: 50%;
+  float: left;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.custom-date-field input {
+  background-color: #ffffff;
+  border: none;
+  padding: 5px 0px;
+  width: 100%;
+  font-size: 15px;
+  color: #9F9898;
+  font-family: "Inter", sans-serif !important;
+}
+
+.custom-date-field span {
+  display: block;
+  font-size: 12px;
+  color: #9F9898;
+}
+
+.custom-date-field label {
+  width: 100%;
+  display: inline-block;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background-image: url("../images/dateicon.png");
+  width: 20px;
+  height: 20px;
+  border-width: thin;
+}
+
+.b-rads-tb-r {
+  border-top-right-radius: 0px 0px;
+  border-bottom-right-radius: 0px 0px;
+}
+
+.b-rads-tb-l {
+  border-top-left-radius: 0px 0px;
+  border-bottom-left-radius: 0px 0px;
+  border-left: 0px;
+}
+
+.clandr-add-btn {
+  font-weight: 500;
+  padding: 25px 110px;
+}
+
+.calendersty-table, .role-permission-table {
+  width: 100%;
+  float: left;
+  margin-top: 1px;
+  display: block;
+  margin-top: -1px;
+  height: 100vh;
+  border-left: 1px solid #D9D9D9;
+}
+
+.calendersty-table table, .role-permission-table table {
+  width: 100%;
+  float: left;
+}
+
+.calendersty-table thead, .role-permission-table thead {
+  border-radius: 0px;
+}
+
+.calendersty-table .table > thead > tr > th, .role-permission-table .table > thead > tr > th {
+  padding-left: 7px;
+  vertical-align: middle;
+  line-height: 32px;
+  border: 0;
+}
+
+.calendersty-table .table > tbody > tr > td:first-child, .calendersty-table .table > thead > tr > th:first-child,
+.role-permission-table .table > tbody > tr > td:first-child, .role-permission-table .table > thead > tr > th:first-child {
+  padding-left: 15px;
+}
+
+.calendersty-table .table > tbody > tr > td, .role-permission-table .table > tbody > tr > td {
+  padding-left: 7px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 0;
+  vertical-align: middle;
+  line-height: 38px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+.calendersty-table .table > thead > tr > th, .role-permission-table .table > thead > tr > th {
+  color: #525252;
+  font-weight: 400;
+}
+
+.th-inner {
+  font-size: 14px;
+  color: #fff;
+}
+
+.calendersty-table table tbody tr td, .role-permission-table table tbody tr td {
+  margin-bottom: 10px;
+  background: #fff;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.calendersty-table .table, .role-permission-table .table {
+  border: 0;
+  background: none;
+  border-radius: 0;
+  outline: none;
+  float: left;
+  width: 100%;
+}
+
+.calendersty-table .table thead, .calendersty-table .table tbody, .role-permission-table .table thead, .role-permission-table .table tbody {
+  width: 100%;
+  float: left;
+  display: block;
+}
+
+thead th .right-icon {
+  padding-top: 1px;
+  width: 8px;
+  float: right;
+}
+
+.calendersty-tablethead th .sortable {
+  cursor: pointer;
+  background-position: right;
+  background-repeat: no-repeat;
+  padding-right: 30px;
+}
+
+.calendersty-table tbody td .th-inner, .calendersty-table thead th .th-inner, .role-permission-table tbody td .th-inner, .role-permission-table thead th .th-inner {
+  padding: 8px;
+  line-height: 24px;
+  vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-position: right;
+}
+
+.fixed-table-loading {
+  display: none;
+}
+
+.calendersty-table table thead tr, .role-permission-table table thead tr {
+  width: 100%;
+  display: flex;
+  float: left;
+  padding-left: 10px;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.calendersty-table table tbody tr, .role-permission-table table tbody tr {
+  padding-bottom: 10px;
+  margin-top: 5px;
+  width: 100%;
+  float: left;
+  background: #fff;
+  border-radius: 0px;
+  height: auto;
+  padding-top: 5px;
+  display: flex;
+  padding-left: 10px;
+  border-bottom: 1px solid #808B9F;
+}
+
+.m-t-5 {
+  margin-top: 5px;
+}
+
+.m-t-10 {
+  margin-top: 10px;
+}
+
+.clandr-left-bord {
+  border-bottom: 1px solid #D9D9D9;
+  padding-bottom: 35px;
+}
+
+.left-table-brdr-top1 {
+  margin-top: 40px;
+}
+
+.p-b-20 {
+  padding-bottom: 20px;
+}
+
+.calender-list-input {
+  font-size: 15px;
+  height: 40px;
+}
+
+.calndr-setp-list-inner-block {
+  width: 100%;
+  float: left;
+  display: block;
+  border-bottom: 1px solid #D9D9D9;
+  padding: 30px 15px 30px;
+}
+
+.clandr-edit-icon-m {
+  margin-top: -5px;
+}
+
+.calendr-top-setup {
+  padding-top: 0px;
+}
+
+.clendr-tr-bordr {
+  border-left: 0px solid #808B9F !important;
+  padding-bottom: 7px !important;
+  padding-top: 7px !important;
+}
+
+.clendr-th-bordr {
+  border-left: 0px solid #808B9F !important;
+}
+
+.lookup-tr1 {
+  border-bottom: 1px solid #D9D9D9 !important;
+  border-left: 0px solid #D9D9D9 !important;
+  border-right: 1px solid #D9D9D9;
+  margin-top: 0px !important;
+}
+
+.thear-tr1 {
+  border: 1px solid #D9D9D9;
+  background-color: #F1F0F0;
+}
+
+.wizard-setp-list-inner-block1 {
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.p-l-8 {
+  padding-left: 8px;
+}
+
+.calendar-management-right-opcty {
+  opacity: 0.5;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.form-control {
+  font-family: "Inter", sans-serif !important;
+}
+
+.caland-add-sty-box {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.caland-done-sty-box {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+a:focus, a:hover {
+  color: #14A38B;
+}
+
+.calender-edit-icon {
+  font-size: 21px !important;
+  font-weight: 300 !important;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.p-t-10 {
+  padding-top: 10px;
+}
+
+@media only screen and (max-width: 1900px) {
+  .calendersty-table {
+    width: 100%;
+    float: left;
+    display: block;
+    overflow: scroll;
+    display: block;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 1520px) {
+  .calendersty-table .table > thead > tr > th, .role-permission-table .table > thead > tr > th {
+    padding-left: 7px;
+    vertical-align: middle;
+    line-height: 32px;
+    border: 0;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .calendersty-table .table > tbody > tr > td:first-child, .calendersty-table .table > thead > tr > th:first-child, .role-permission-table .table > tbody > tr > td:first-child, .role-permission-table .table > thead > tr > th:first-child {
+    padding-left: 5px;
+  }
+  .calendersty-table .table > thead > tr > th, .role-permission-table .table > thead > tr > th {
+    padding-left: 7px;
+    vertical-align: middle;
+    line-height: 32px;
+    border: 0;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .calander-mangmt-top-grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 30px 20px;
+  }
+  .calendersty-table {
+    width: 100%;
+    float: left;
+    display: block;
+    overflow: scroll;
+    display: block;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    margin-bottom: 15px;
+  }
+  .calendersty-table table {
+    border-collapse: collapse;
+    /* overflow-x: auto; */
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+    width: auto !important;
+    float: left;
+    max-width: 5000;
+  }
+  .calendersty-table table thead {
+    width: auto;
+    display: flex;
+  }
+  .calendersty-table table tr {
+    width: auto;
+    display: flex;
+  }
+  .calendersty-table table tbody {
+    width: 100% !important;
+    display: flex;
+  }
+  .calendersty-table .width-15 {
+    width: 200px;
+  }
+  .calendersty-table .width-24 {
+    width: 350px;
+  }
+  .calendersty-table .width-7 {
+    width: 80px;
+  }
+  .calendersty-table .width-10 {
+    width: 80px;
+  }
+  .calendersty-table .width-30 {
+    width: 335px;
+  }
+  .calendersty-table .width-12 {
+    width: 70px !important;
+  }
+  .calendersty-table .width-25 {
+    width: 315px;
+  }
+  .calendersty-table .width-20 {
+    width: 250px;
+    float: left !important;
+  }
+  .calendersty-table, .role-permission-table {
+    height: 100vh;
+    border-left: 0px solid #000;
+  }
+  .calendr-top-setup {
+    padding-top: 30px;
+  }
+  .clendr-tr-bordr {
+    border-left: 1px solid #D9D9D9 !important;
+  }
+  .clendr-th-bordr {
+    border-left: 1px solid #D9D9D9 !important;
+  }
+  .caland-add-sty-box {
+    margin-top: -30px;
+    margin-bottom: -20px;
+  }
+  .caland-done-sty-box {
+    margin-top: 0px;
+    margin-bottom: -20px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .calander-mangmt-top-grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 30px 20px;
+  }
+  .calendersty-table table tbody {
+    width: 100% !important;
+    display: flex;
+  }
+  .calendersty-table table {
+    border-collapse: collapse;
+    /* overflow-x: auto; */
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+    width: 100% !important;
+    float: left;
+    max-width: 5000;
+  }
+}
+@media only screen and (max-width: 840px) {
+  .calendersty-table table tbody {
+    width: auto !important;
+    display: flex;
+  }
+  .calendersty-table table thead {
+    width: auto !important;
+    display: flex;
+  }
+  .calendersty-table table {
+    border-collapse: collapse;
+    /* overflow-x: auto; */
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+    width: 600px !important;
+    float: left;
+    max-width: 5000;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .calendersty-table table thead {
+    width: auto !important;
+    display: flex;
+  }
+  .calendersty-table table {
+    border-collapse: collapse;
+    /* overflow-x: auto; */
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+    width: 500px !important;
+    float: left;
+    max-width: 5000;
+  }
+  .caland-done-sty-box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 668px) {
+  .calendersty-table table thead {
+    width: auto !important;
+    display: flex;
+  }
+  .calendersty-table table {
+    border-collapse: collapse;
+    /* overflow-x: auto; */
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+    width: 400px !important;
+    float: left;
+    max-width: 5000;
+  }
+}/*# sourceMappingURL=calander-mangmnt.css.map */

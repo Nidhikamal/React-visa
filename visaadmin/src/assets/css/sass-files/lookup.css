@@ -1,0 +1,219 @@
+.thear-tr {
+  border: 1px solid #808B9F;
+  background-color: #F1F0F0;
+}
+
+.lookup-top-boxborder {
+  border-bottom: 0px solid #808B9F !important;
+}
+
+.lookup-input {
+  width: 85%;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  float: left;
+}
+
+.lookup-dots-box {
+  padding: 0px 10px 0px 10px;
+  border-bottom: 0.5px solid #7B8EB0;
+  border-right: 0.5px solid #7B8EB0;
+  border-top: 0.5px solid #7B8EB0;
+  margin-top: 0px;
+  height: 35px;
+  width: 45px;
+  float: left;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.lookup-dots-box svg {
+  margin-top: 16px;
+  margin-left: 5px;
+  vertical-align: super;
+}
+
+.m-l-15 {
+  margin-left: 15px;
+}
+
+.f-non {
+  float: none;
+  padding-bottom: 15px;
+}
+
+.p-t-20 {
+  padding-top: 20px;
+}
+
+.input-span {
+  width: 60%;
+}
+
+.input-span-block {
+  background: #D9D9D9;
+}
+
+.input-span-bg {
+  background-color: #fff;
+}
+
+.input-span-bg:focus {
+  border: 0.5px solid #808B9F;
+  background-color: #fff !important;
+  box-shadow: none;
+  background: none;
+}
+
+.p-t-7 {
+  padding-top: 7px;
+}
+
+.doc-ico-right1 {
+  float: left;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.svg-sty {
+  margin-top: 7px;
+}
+
+.lookup-setp-block .list-right a:hover svg path {
+  fill: #fff;
+  stroke: #14A38B;
+}
+
+.add-lookup-button {
+  width: 185px;
+}
+
+.add-lookup-don {
+  width: 245px;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.p-l-10 {
+  padding-left: 10px;
+}
+
+@media only screen and (max-width: 2180px) {
+  .lookup-input {
+    width: 83%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    float: left;
+  }
+}
+@media only screen and (max-width: 2080px) {
+  .lookup-input {
+    width: 82%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    float: left;
+  }
+}
+@media only screen and (max-width: 1980px) {
+  .lookup-input {
+    width: 80%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    float: left;
+  }
+}
+@media only screen and (max-width: 1680px) {
+  .lookup-input {
+    width: 76%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    float: left;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .lookup-input {
+    width: 73%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    float: left;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .lookup-input {
+    width: 71%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    float: left;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .lookup-input {
+    width: 80%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    float: left;
+  }
+  .lookup-popup-table table thead {
+    width: auto !important;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 1070px) {
+  .document-table table thead {
+    width: auto !important;
+    display: flex;
+  }
+  .lookup-popup-table table thead {
+    width: auto !important;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 1030px) {
+  .lookup-popup-table table thead {
+    width: auto !important;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .lookup-input {
+    width: 80%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    float: left;
+  }
+  .lookup-popup-table table thead {
+    width: 100% !important;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 880px) {
+  .lookup-popup-table table thead {
+    width: 100% !important;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .lookup-popup-table table thead {
+    width: auto !important;
+    display: flex;
+  }
+}
+.lookup-tr {
+  border-bottom: 1px solid #808B9F !important;
+  border-left: 1px solid #808B9F !important;
+  border-right: 1px solid #808B9F;
+  margin-top: 0px !important;
+  padding-bottom: 25px !important;
+  padding-top: 30px !important;
+}
+
+.lookup-table table tbody tr, .role-permission-table table tbody tr {
+  border-bottom: 1px solid #808B9F !important;
+  border-left: 1px solid #808B9F !important;
+  border-right: 1px solid #808B9F;
+  margin-top: 0px !important;
+  padding-bottom: 25px !important;
+  padding-top: 25px !important;
+}/*# sourceMappingURL=lookup.css.map */

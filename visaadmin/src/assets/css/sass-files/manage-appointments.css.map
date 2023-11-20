@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,+BAA+B,CAAA;EAC3B,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,IAAI;EACX,KAAK,EAAE,IAAI;CACd",
+    "sources": [
+        "manage-appointments.scss"
+    ],
+    "names": [],
+    "file": "manage-appointments.css"
+}

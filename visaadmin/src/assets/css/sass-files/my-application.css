@@ -1,0 +1,26 @@
+.my-application-top-main-bar {
+  width: 100%;
+  float: left;
+  border-bottom: 1px solid #D9D9D9;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
+
+.appointment-application-middle {
+  width: 100%;
+  float: left;
+  display: block;
+}
+
+.appointment-application-middle .left-block {
+  width: 40%;
+  float: left;
+  display: block;
+}
+
+.appointment-application-middle .right-block {
+  width: 50%;
+  float: right;
+  display: block;
+}
+/*# sourceMappingURL=my-application.css.map */

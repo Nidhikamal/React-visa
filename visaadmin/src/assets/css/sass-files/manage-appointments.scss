@@ -1,0 +1,884 @@
+.manage-appointments-main-outer{
+    display: flex;
+    width: 100%;
+    float: left;
+    border-top: 1px solid $light-white-gray;
+    .left-section{
+        width: 20%;  display: block;
+        float: left;     padding-top: 25px;
+        border-right: 1px solid $light-white-gray;padding-left: 0;
+        padding-right: 0;   
+        height: 92vh;
+        .top-calander-block{
+width: 100%;
+float: left;padding-left: 15px;
+padding-right: 15px;
+display: block;
+        }
+    }
+    .middle-section{
+        width: 60%;     padding-top: 25px;
+        float: left;  display: block;padding-left: 0;
+        padding-right: 0;   
+    }
+    .right-section{
+        width: 20%;padding-left: 0;
+        padding-right: 0;   
+        padding-top: 25px;
+        float: left;  display: block;  border-left: 1px solid $light-white-gray;
+    }
+}
+
+
+.manage-appointments-main-outer {
+
+.col-md-12{
+    padding-left: 0;
+    padding-right: 0;
+}
+}
+.sloat-avaliable-block{
+    width: 100%;
+    padding: 25px;
+    float: left;
+    
+    border-top: 1px solid $light-white-gray;
+    border-bottom: 1px solid $light-white-gray;
+    display: block;
+    .left-ccontent{
+        float: left;
+        font-size: $common-small-font;
+        font-weight: $font-weight-600;
+        color: $backcolor;
+    }
+    .right-ccontent{
+        float: right;
+        color: $primary-blue;
+        font-size: $common-small-font;
+        font-weight: $font-weight-600;
+    }
+}
+
+.manage-appointments-footer {
+    width: 20%;
+    float: left;
+    position: fixed;
+    bottom: 0;
+    padding: 20px 10px 20px 15px;
+    display: flex;
+    border-top: 1px solid $light-white-gray;
+
+ .left {
+        width: 85%;
+        float: left;
+        display: flex;
+        padding-left: 0px;
+  
+        p{
+            width: auto;
+            float: left;
+            display: block;
+            font-size:  $common-small-font;
+            font-weight: $font-weight-400;
+         
+            span {
+                float: left;
+                width: 100%;
+                font-size: 12px;
+            }
+        }
+      
+        img {
+            width: 25px;    margin-top: -11px;
+            margin-right: 10px;
+            float: left;}
+    }
+    .right{
+        float: right;width: 15%;
+        a{
+            float: right;
+            display: block;
+            text-align: right;
+        }
+    }
+}
+.myslot-block{
+    width: 100%;
+    float: left;    padding-left: 15px;
+    padding-right: 15px;
+ display: block;
+ border-bottom: 1px solid $light-white-gray;    padding-bottom: 25px;
+    .left-text{
+        width: auto;
+        display: block;
+        width: auto;
+        display: block;
+        float: left;
+        padding-top: 9px; font-size: $font-size-16;
+        font-weight: $font-weight-600;
+    }
+
+}    .pluse-button{
+    width:auto;
+    float: right;
+    background: $primary-blue;
+    padding: 8px 23px 8px;
+    color: #fff;
+    text-align: center;
+    border:0;   font-weight: $font-weight-300;
+    border-radius: 6px;
+outline: 0;line-height: 21px;
+font-size: 26px;
+&:hover{
+    background: $green-color;
+    color: #fff;
+}
+}
+.place-and-mission-block{
+    width:100%;
+    float: left;
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    .place-mission-two-grid{
+    // width: 335px;
+    // float: left;
+    // display: block;
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr) !important;
+    // gap: 30px 20px;
+    // margin-bottom: 25px;
+    // grid-auto-rows: minmax(0px, auto);
+
+    width: 275px;
+    float: left;
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    /* gap: 30px 20px; */
+    margin-bottom: 25px;
+    grid-auto-rows: minmax(0px, auto);
+    }
+}
+.large-clander-block{
+width: 100%;
+float: left;
+display: block;
+border-bottom: 1px solid $light-white-gray;
+}
+
+.create-slot-text{
+    width: auto;
+    float: left;
+    display: block;
+    float: left;
+    padding-top: 2px; font-size: $font-size-16;
+    font-weight: $font-weight-600;
+}
+.create-slot-close{
+    float: right;
+    background: none;
+    display: block;
+    background: none;
+    border: 0;
+    span{
+        color: $backcolor;
+        font-size: $font-size-16;
+        font-weight: $font-weight-600;
+    }
+    &:hover span{
+        border: 0;
+        color:$green-color ;
+    }
+}
+.slot-dte-outer-block{
+    width: 100%;
+    float: left;
+    display: block;
+
+
+    .slot-from-to-date{
+        width: 100%;
+        float: left;
+        display: block;
+        ul{
+            width: 100%;
+            float: left;
+            display: block;
+            padding-top: 20px;    margin-left: 15px;
+            li{
+                width: 100%;
+                float: left;
+                padding-bottom: 15px;
+                position: relative;
+                padding-left: 10px;
+             
+               &::before {
+                content: "";
+                position: absolute;
+                left: -13px;
+                top: 4px;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                -moz-border-radius: 50%;
+                -webkit-border-radius: 50%;
+                border: 1px solid  $backcolor;
+               }
+               &::after {
+                border-left: 1px dotted  $backcolor;
+                content: "";
+                position: absolute;
+                top: 11px;
+                left: -10px;
+                bottom: 0;
+                width: 150px;
+                z-index: -1;
+                height: 46px;
+           }
+           &:last-child{
+               padding-bottom: 0;
+              &::after  {display:none;}
+           }
+            p{
+                width: 100%;
+                float: left;
+                display: block;
+                font-size: $font-size-12;
+                color: $gray-text-color;
+            }
+            span{
+                width: 100%;
+                float: left;
+                display: block;
+                font-size: $common-small-font;
+                color: $backcolor;
+            }
+            }
+        }
+    }
+}
+.select-s-lot-intervel{
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid $light-white-gray;
+    display: block;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    font-size: $common-small-font;
+    color: $gray-text-color;
+    padding-left: 15px;
+    padding-right: 15px;
+} 
+.slot-dte-outer-block-popupp 
+{
+    padding: 0px 15px !important;
+} 
+ .slot-tittle{
+    width: 100%;
+    float: left;
+
+    display: block;
+    padding-bottom: 15px;
+  margin-top: 30px;;
+    font-size: $common-small-font;
+    color: $gray-text-color;
+}
+.border-bottom-1
+{
+    border-bottom: 1px solid $light-white-gray;
+}
+.select-slot-intervel-input{
+    position: relative;
+    float: left;
+    width: 100%;
+
+    input{
+        padding-left: 40px;
+    }
+}
+.select-slot-clock{
+    position: absolute;
+    left: 0;    width: 34px;
+    border-right: 1px solid $light-white-gray;
+    height: 35px;padding-left: 10px;
+    padding-top: 10px;
+    img{width: 15px;}
+}
+.select-slot-intervel-block{
+    width: 100%;
+    float: left;
+   
+    display: block;
+    .inner-block-intervel{
+        width: 100%;
+        float: left;   border-top: 1px solid $light-white-gray;
+        padding-top: 20px;
+        margin-top: 25px;
+        display: flex;
+        .left-icon-intervel{
+            float: left;
+            width: 15px;
+            display: block;
+            padding-top: 5px;
+            margin-right: 10px;
+        }
+        .right-intervel{
+width: 100%;
+float: left;
+width: 100%;
+        }
+    }
+}
+.add-rules-top{
+    padding-top: 25px;
+    float: left;
+    display: block;
+    width: 100%;
+    border-bottom: 0;
+}
+.create-button-block{
+    float: left;
+    display: block;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px; 
+    .add-new-button{
+        width: 100%;
+    }
+}
+.preference-block{
+    width: 100%;
+    float: left;
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    ul{
+        width: 100%;
+        float: left;
+        display: block;
+
+        ol{
+            width: 100%;
+padding-bottom: 20px;
+border-bottom: 1px solid $light-white-gray;
+padding-top: 20px;
+            float: left;
+            display: list-item;
+            list-style-position: inside;
+            font-size: $common-small-font;
+            &:hover{
+                color: $green-color;
+                span{
+                    color: $green-color;
+                }
+            }
+            span{
+                float: right;
+                display: block;
+                font-size: $font-size-16;
+            }
+        }
+    }
+}
+.expedite-block{
+    width: 100%;
+    float: left;
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    .content-inner-block{
+        width: 100%;
+        float: left;
+        display: block;   margin-bottom: 7px;
+        padding: 8px 10px 6px; margin-top: 7px;
+        .left-bl{
+        width: 90%;    float: left;
+        display: block;
+        .top-text{
+            width: 100%;
+            float: left;
+            display: block;
+            font-size: $common-small-font;
+            font-weight: $font-weight-600;
+    line-height: 23px;
+        }
+        p{
+            padding: 5px 0;
+            width: 100%;
+            float: left;       font-size: $common-small-font;
+            span{
+                font-size: $common-small-font;
+                float: left;
+                padding-top: 3px;
+                padding-right: 10px;
+            }
+        }
+        }
+        span{
+            font-size: $font-size-16;
+            float: right;
+            text-align: right;
+            margin-top: 5px;
+        }
+    }
+}
+.fliter-solt-block{
+    width: 100%;
+    float: left;
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 0px;
+  ul{
+width: 100%;
+float: left;
+padding-top: 10px;
+display: block;
+li{
+    width: 100%;
+    float: left;
+    padding-bottom: 15px;
+    display: block;
+    .checkbox-lf{
+        label{
+font-weight: $font-weight-600;
+        }
+      
+    }
+    span{
+        width: 100%;
+        float: left;
+        color: $color-orange;
+        font-size: $font-size-12;
+        padding-left: 33px;
+        padding-top: 5px;
+    }
+}
+  }
+}
+.all-appointments-modal{
+    width: 100%;
+    float: left;
+display: block;   
+padding: 5px;
+padding-top: 30px;
+border-top: 1px solid $light-white-gray;
+
+.all-appo-modal-inner-content{
+    width: 100%;
+    float: left;
+display: flex;
+padding-bottom: 30px;
+.left-icon{
+width: 35px;
+float: left;
+display: block;
+line-height: 18px;
+    font-size:$common-small-font;
+img{
+    width: 14px;
+    float: left;
+}
+}
+.right-content-area{
+    float: left;
+    width: 90%;
+    display: block;
+    p{
+        font-size: $font-size-13;
+        float: left;
+        display: block;
+        span{
+            font-weight: $font-weight-600;
+            color: $primary-blue;
+        }
+    }
+    .form-group {
+        padding-top: 10px;}
+    }
+}
+}
+
+.all-appointments-modal-outer {
+    width: 360px;
+    margin: 0px auto;
+}
+
+ .otp-inner-block {
+    float: left;
+    width: 100%;
+    display: block;
+}
+.my-appointment-button{
+    float: left;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    .add-new-button{
+        width: 100%;
+        text-align: center;
+    }
+}
+.all-appo-modal-top-buttons{
+    width:100%;
+    float: left;
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 30px 10px;
+    margin-bottom: 25px;
+    grid-auto-rows: minmax(0px, auto);
+
+    .all-appo-buttons{
+        width: 100%;
+        float: left;
+        text-align: center;border: 1px solid $light-white-gray;
+        border-radius: 4px;
+        font-size: $font-size-13;
+        color: $gray-text-color;
+        padding: 8px 0;
+        &:hover{
+            background: $light-white-gray;
+            border: 1px solid $light-white-gray;
+        }
+        &.active{
+            background: $light-white-gray;
+            border: 1px solid $light-white-gray; 
+        }
+    }
+}
+.form-group.time-drop-down{
+    width: auto;
+    float: left;
+    display: block;
+    padding: 0!important;
+    .bootstrap-select > .dropdown-toggle {
+        border: 0px solid #7B8EB0;
+        height:auto;
+        background: none;
+        line-height: 25px;
+    }
+    .dropdown-toggle::before{
+        display: none;
+    }
+    .dropdown-toggle::after{
+        display: none;
+    }
+    .btn{
+        padding: 0;
+    }
+    .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+        font-size: 13px;
+    }
+}
+.deactive-content-block{
+    opacity: 0.2;
+}
+.all-appointments-modal {
+    .form-group textarea{
+        height: 90px;
+        line-height: 14px;
+        min-height: 20px;
+    }
+}
+.expedite-block .content-inner-block span {
+    font-size: 16px;
+    float: right;
+    text-align: right;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.edit-delet-drop {
+    padding: 15px;
+    line-height: 21px;
+    float: right;
+    left: unset;
+    right: 0;
+    margin-top: 22px;
+    min-width: 100px;
+}
+
+.edit-delet-drop hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+.all-apponmts-modal-new {
+    width: 560px;
+    margin: 0px auto;
+}
+.head-sub-mian-font {
+    font-size: 18px;
+   float: initial; 
+    font-weight: 600;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+.my-appoinmt-btn1 { 
+    padding-left: 65px;
+    margin-bottom: 40px !important;
+}
+.expedite-block .content-inner-block span { 
+    margin-top: 0px; 
+    padding-right: 10px;
+    padding-top: 5px;
+}
+.span-green {
+    width: 100%;
+    float: left;
+    color: #00962A !important;
+    font-size: 12px;
+    padding-left: 33px;
+    padding-top: 5px;
+}
+.span-yellow {
+    float: right !important;
+    padding-right: 0px !important;
+    margin-right: -25px;
+    color: #F77804;
+}
+.opacity-5 {
+    opacity: 0.6;
+}
+@media only screen and (max-width: 1360px) {
+    .manage-appointments-main-outer .left-section,     .manage-appointments-main-outer .right-section  {
+        width: 23%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+        .manage-appointments-main-outer .left-section,     .manage-appointments-main-outer .right-section  {
+            width: 25%;
+    }
+    .pluse-button {
+        padding: 8px 17px 8px;
+
+    }
+}
+
+@media only screen and (max-width:980px) {
+    .manage-appointments-main-outer .left-section, .manage-appointments-main-outer .right-section {
+        width: 30%;
+    }
+    .slot-dte-outer-block .slot-from-to-date ul li span {
+        font-size: 13px;
+    }
+    .preference-block ul ol {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .manage-appointments-main-outer {
+        display: block;
+    }
+    .manage-appointments-main-outer .left-section, .manage-appointments-main-outer .right-section{
+        width: 100%;     
+    }
+    .manage-appointments-main-outer .left-section {
+        height: auto;
+    }
+   .manage-appointments-main-outer .middle-section {
+        width: 100%;
+        margin-top: 30px;    padding-top: 0;
+        margin-bottom: 10px;
+    }
+    .manage-appointments-footer {
+        width: 100%;
+        padding-left:30px;
+        background: #fff;
+        z-index: 10;
+        padding-right: 30px;
+    }
+
+    .myslot-block ,  .top-calander-block,   .sloat-avaliable-block,  .place-and-mission-block , .select-s-lot-intervel,   .create-button-block, .myslot-block, .preference-block, .expedite-block, .fliter-solt-block{
+        padding-left:30px;
+        padding-right: 30px;
+    }
+    .manage-appointments-main-outer .middle-section .large-clander-block {
+        padding-left:30px;
+        padding-right: 30px;
+    }
+  
+    .manage-appointments-main-outer .right-section {
+        padding-bottom: 100px;
+    }
+
+.manage-appointments-footer .left {
+    width: 100%;
+    padding-left: 0;
+}
+.fliter-solt-block {
+
+    margin-top: 10px;
+}
+}
+
+@media only screen and (max-width:580px) {
+    
+    .all-apponmts-modal-new {
+        width: 92%;
+        margin: 3px 10px;
+    }
+    .my-appoinmt-btn1 { 
+        padding-left: 43px;
+    }
+}
+@media only screen and (max-width:480px) {
+    .place-and-mission-block .place-mission-two-grid {
+        width:100%;
+    }
+    .all-appointments-modal-outer {
+        width: 90%;
+    }
+    .all-apponmts-modal-new {
+        width: 92%;
+        margin: 3px 10px;
+    }
+}
+
+.place-mission-two-grid-new-change
+{
+    float: right !important;
+    width: 460px;
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 30px 20px;
+    margin-bottom: 25px;
+    grid-auto-rows: minmax(0px, auto);
+}
+.prev
+{
+    font-size: 18px;
+  
+    padding-right: 5px
+}
+.nex
+{
+    font-size: 18px;
+  
+    padding-left: 5px
+}
+
+
+.select-slot-clock img{
+    height: 14px;
+}
+.selectpicker-popup
+{
+    border:none;
+}
+.selectpicker-popup button
+{
+    border:none !important;
+}
+.add-rules-top-popup
+{
+    border-bottom: 1px solid #D9D9D9 !important;
+}
+.add-step-button-popup
+{
+    min-width: 95px !important;
+    width: auto;
+    float: left;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #0D192E;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 13px;
+    margin: 0px 2px;
+    background-color: transparent !important;
+}
+.month-pagination
+{
+   
+}
+.month-pagination li {
+    display: inline-block !important;
+    font-family: "Inter";
+    font-style: normal;
+    font-size: 15px;
+    padding: 9px 15px;
+    /* border: solid 1px #000; */
+    margin: -2px;
+    border: solid 1px #D9D9D9;
+    /* border-radius: 5px; */
+}
+.month-pagination li:first-child
+{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #D9D9D9;
+}
+.month-pagination li:last-child
+{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.selected-data
+{
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+}
+.selected-data
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    line-height: 2.5;
+    text-align: center;
+}
+.month
+{
+    height: 48px;
+    line-height: 3.8;
+}
+.bootstrap-select > .selectpicker-popup
+{
+    border:none;
+    box-shadow: none;
+}
+.my-select-popup button
+{
+    border:none !important;
+}
+.my-select-popup
+{
+    font-style: normal;
+font-weight: 400;
+font-size: 14px;
+}
+.my-select-popupp
+{
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+.add-rule-div
+{
+    padding: 91px 15px 0px;
+}
+.slot-dte-outer-block-popup
+{
+    padding: 0px 15px;
+}
+.add-rules-top-comon
+{
+    padding-top: 30px;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.add-rules-topp
+{
+    padding: 9px 0px 0px;
+}
